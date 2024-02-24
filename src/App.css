@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+h1, h2 {
+  font-family: 'plaak43-bold';
+  font-size: 5em;
+  line-height: 0.8;
+}
+
+h1 {
+  margin-bottom: 0.3em;
+}
+
+p {
+  font-family: "plaak24-light";
+  font-size: 1em;
+  line-height: 0.9;
+}
+
+.home-container {
+  height: 100vh;
+  /* width: 10000px; */
+  display: flex;
+  align-items: center;
+}
+
+.home-container .text-box {
+  width: 300px;
+  align-self: flex-start;
+  z-index: 1000;
+  margin-right: 3em;
+  padding: 4.5em;
+}
+
+.home-container .text-box h3 {
+  font-family: "plaak24-light";
+  font-size: 1.2em;
+}
+
+/* WORKS CONTAINER */
+
+.home-container .works-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 4.5em;
+}
+
+/* PETIT BALLON #1 */
+
+.home-container .works-container .work-box#petit-ballon {
+  height: 105%;
+  width: 600px;
+  position: relative;
+}
+
+.home-container .works-container .work-box#petit-ballon .big-content {
+  height: 80%;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.home-container .works-container .work-box#petit-ballon .big-content img {
+  width: 130%;
+  height: auto;
+}
+
+.home-container .works-container .work-box#petit-ballon .message-box {
+  width: 150px;
+  position: absolute;
+  top: 40px;
+  right: -160px;
+}
+
+.home-container .works-container .work-box#petit-ballon .message-box .smile-img {
+  width: 25px;
+  margin-top: 0.5em;
+}
+
+/* PETIT BALLON 2 */
+
+.home-container .works-container .work-box#petit-ballon-2 {
+  height: 105%;
+  width: 600px;
+  position: relative;
+}
+
+.home-container .works-container .work-box#petit-ballon-2 .big-content {
+  position: absolute;
+  width: 600px;
+  bottom: 50px;
+  left: -120px;
+}
+
+.home-container .works-container .work-box#petit-ballon-2 .big-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* PETIT BALLON 2 EXTRA */
+
+.home-container .works-container .work-box#petit-ballon-2 .extra-content {
+  width: 300px;
+  position: absolute;
+  right: -20px;
+  top: -200px;
+  z-index: 899;
+}
+
+.home-container .works-container .work-box#petit-ballon-2 .extra-content img {
+  height: 650px;
+  transform: rotate(-20deg);
+}
+
+/* PETIT BALLON 3 - MARQUEE */
+
+.home-container .works-container .work-box#petit-ballon-3 {
+  height: 105%;
+  width: 410px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container .works-container .work-box#petit-ballon-3 img {
+  width: 400px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+
+.home-container .works-container .work-box#petit-ballon-3 .marquee {
+  background-color: #e2ff40;
+  width: 140%;
+  height: 90px;
+  position: absolute;
+  left: -80px;
+  bottom: 130px;
+  transform: rotate(4deg);
+  font-size: 2.5em;
+  font-family: "rza-black";
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+/* PLAYTIME PARIS */
+
+.home-container .works-container .work-box#playtime-paris {
+  height: 105%;
+  width: 600px;
+  position: relative;
+  margin-left: 3em;
+  z-index: 2;
+  border: 0;
+}
+
+.home-container .works-container .work-box#playtime-paris .big-content {
+  height: 80%;
+  margin-bottom: 2em;
+}
+
+.home-container .works-container .work-box#playtime-paris .big-content img {
+  width: 100%;
+}
+
+.home-container .works-container .work-box#playtime-paris .big-content .whale-img {
+  position: absolute;
+  width: 300px;
+  left: -150px;
+  top: -30px;
+}
+
+/* ZONZA */
+
+.home-container .works-container .work-box#zonza {
+  height: 105%;
+  width: 520px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-container .works-container .work-box#zonza h2 {
+  margin-left: 0.1em;
+  font-size: 9em;
+  position: absolute;
+  top: -25px;
+}
+
+.home-container .works-container .work-box#zonza .big-content {
+  height: 80%;
+  margin-bottom: 1.5em;
+  position: absolute;
+  bottom: 0;
+}
+
+.home-container .works-container .work-box#zonza .big-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* OMY EXTRA (TIGER)*/
+
+.home-container .works-container .work-box#omy-extra {
+  height: 105%;
+  width: 240px;
+  position: relative;
+  z-index: 2;
+}
+
+.home-container .works-container .work-box#omy-extra .message-box {
+  position: absolute;
+  top: -30px;
+  left: -70px;
+}
+
+.home-container .works-container .work-box#omy-extra .message-box .arrow-img {
+  width: 40px;
+  position: absolute;
+  right: -60px;
+  bottom: -10px;
+  transform: rotate(-8deg);
+}
+
+.home-container .works-container .work-box#omy-extra .big-content {
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.home-container .works-container .work-box#omy-extra .big-content img {
+  width: 320px;
+  height: auto;
+}
+
+.home-container .works-container .work-box#omy-extra .tape-img {
+  width: 450px;
+  position: absolute;
+  bottom: 40px;
+  left: -400px;
+  transform: rotate(-10deg);
+  z-index: 1000;
+}
+
+/* OMY MAIN */
+
+.home-container .works-container .work-box#omy-main {
+  height: 105%;
+  width: 520px;
+  position: relative;
+  margin-left: 0.2em;
+}
+
+.home-container .works-container .work-box#omy-main h2 {
+  font-size: 15em;
+  position: absolute;
+  top: -30px;
+
+}
+
+.home-container .works-container .work-box#omy-main .big-content {
+  height: 80%;
+  position: absolute;
+  bottom: -50px;
+}
+
+.home-container .works-container .work-box#omy-main .big-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* KIEHL'S */
+
+.home-container .works-container .work-box#kiehls {
+  height: 105%;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.home-container .works-container .work-box#kiehls .align-box {
+  text-align: center;
+  width: 390px;
+  position: absolute;
+  left: -190px;
+  top: -30px;
+}
+
+.home-container .works-container .work-box#kiehls h2 {
+  font-size: 3em;
+  margin-bottom: 0.1em;
+}
+
+.home-container .works-container .work-box#kiehls .big-content {
+  width: 100%;
+}
+
+.home-container .works-container .work-box#kiehls .big-content img {
+  width: 100%;
+}
+
+/* PAIKEA */
+
+.home-container .works-container .work-box#paikea {
+  height: 105%;
+  width: 600px;
+  position: relative;
+  text-align: center;
+}
+
+.home-container .works-container .work-box#paikea .align-box {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.home-container .works-container .work-box#paikea h2 {
+  font-size: 7em;
+  margin-bottom: 0.1em;
+}
+
+.home-container .works-container .work-box#paikea .big-content {
+  width: 600px;
+}
+
+.home-container .works-container .work-box#paikea .big-content img {
+  width: 100%;
+}
+
+/* CIDER */
+
+.home-container .works-container .work-box#cider {
+  height: 105%;
+  width: 80px;
+  position: relative;
+  text-align: center;
+}
+
+.home-container .works-container .work-box#cider h2 {
+  font-size: 4em;
+  position: absolute;
+  left: 15px;
+  top: -15px;
+}
+
+.home-container .works-container .work-box#cider .big-content {
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: -100px;
+}
+
+.home-container .works-container .work-box#cider .big-content img {
+  width: 100%;
+}
+
+/* ------ ABOUT CONTAINER ------ */
+
+.home-container .about-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+}
+
+.home-container .about-container .big-about {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  margin-left: 6em;
+  z-index: 1;
+}
+
+.home-container .about-container .big-about h3 {
+  font-size: 50em;
+  font-family: 'plaak43-bold';
+  color: #fff;
+  margin-top: -60px;
+}
+
+.home-container .about-container .big-about#behind {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  display: flex;
+}
+
+.home-container .about-container .big-about#behind img {
+  width: auto;
+  height: 405px;
+  margin-left: 50px;
+}
+
+.home-container .about-container .sticker-container {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  z-index: 2;
+}
+
+.home-container .about-container .sticker-container-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.home-container .about-container .sticker-container-relative img#sticker {
+  position: absolute;
+  width: 250px;
+  bottom: 230px;
+  left: 280px;
+}
+
+.home-container .about-container .sticker-container-relative .yellow_tape {
+  position: absolute;
+  width: 250px;
+}
+
+.home-container .about-container .sticker-container-relative .yellow_tape#first {
+  bottom: 130px;
+  left: 630px;
+  transform: rotate(12deg);
+}
+
+.home-container .about-container .sticker-container-relative .yellow_tape#second {
+  bottom: 500px;
+  left: 2550px;
+  transform: rotate(-12deg);
+}
+
+
+/* YELLOW TEXT BOX */
+
+.home-container .about-container .sticker-container-relative .yellow-text-box {
+  background-color: #EFFF55;
+  width: 200px;
+  height: auto;
+  padding: 1em;
+  position: relative;
+  white-space: wrap;
+  position: absolute;
+}
+
+.home-container .about-container .sticker-container-relative .yellow-text-box p {
+  margin: 0;
+  font-family: 'plaak43-bold';
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.home-container .about-container .sticker-container-relative .yellow-text-box#first {
+  bottom: 130px;
+  left: 1175px;
+}
+
+.home-container .about-container .sticker-container-relative .yellow-text-box#second {
+  width: 340px;
+  bottom: 430px;
+  left: 1450px;
+}
+
+.home-container .about-container .sticker-container-relative .yellow-text-box#third {
+  width: 230px;
+  bottom: 250px;
+  left: 2000px;
+}
+
+/* ------ CONTACT CONTAINER ------ */
+
+.home-container .about-container .contact-container {
+  background-color: #EFFF55;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  padding: 4.5em 0;
+}
+
+.home-container .about-container .contact-container .contact-button {
+  padding: 1.4em;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.home-container .about-container .contact-container .contact-button p {
+  font-size: 3em;
+  font-family: 'plaak43-bold';
+}
+
+.home-container .about-container .contact-container img#stars {
+  width: 80px;
+}
+
+.home-container .about-container .contact-container img#big-iso {
+  width: 210px;
+}
+
+.home-container .about-container .contact-container .contact-message {
+  text-align: center;
+  height: auto;
+  white-space: wrap;
+}
+
+.home-container .about-container .contact-container .contact-message img {
+  width: 50px;
+  margin-bottom: 0.5em;
+}
+
+.home-container .about-container .contact-container .contact-message h4 {
+  font-family: 'plaak24-light';
+  font-size: 1.5em;
+  line-height: 0.9;
+  text-align: left;
+}

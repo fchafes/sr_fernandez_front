@@ -1,0 +1,42 @@
+.sticky-container {
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.8em 2em;
+    z-index: 900;
+  }
+  
+  .sticky-container .logo {
+    position: relative;
+  }
+  
+  .sticky-container .logo img {
+    width: 130px;
+    position: absolute;
+    top: -1em;
+    left: -6em;
+  }
+  
+  .sticky-container .logo h2 {
+    font-family: "rza-black";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .sticky-container .navbar .menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: "plaak43-bold";
+    font-size: 1.3em;
+    gap: 5px;
+  }
+  
+  .sticky-container .navbar .menu ul img {
+    width: 50px;
+  }

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'rza-black';
+    src: url('../assets/fonts/Rza-Black.otf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'plaak43-bold';
+    src: url('../assets/fonts/Plaak3-43-Bold.otf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'plaak24-light';
+    src: url('../assets/fonts/Plaak4-24-Light.otf') format('truetype');
+  }
