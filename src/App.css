@@ -177,6 +177,13 @@ p {
   top: -30px;
 }
 
+.home-container .works-container .work-box#playtime-paris .big-content .stars-img {
+  position: absolute;
+  width: 70px;
+  left: -235px;
+  top: -10px;
+}
+
 /* ZONZA */
 
 .home-container .works-container .work-box#zonza {
@@ -193,6 +200,14 @@ p {
   top: -25px;
 }
 
+.home-container .works-container .work-box#zonza .zonza-stars {
+  position: absolute; 
+  width: 90px;
+  left: 260px;
+  top: -30px;
+  transform: rotate(200deg);
+}
+
 .home-container .works-container .work-box#zonza .big-content {
   height: 80%;
   margin-bottom: 1.5em;
@@ -204,6 +219,7 @@ p {
   width: 100%;
   height: auto;
 }
+
 
 /* OMY EXTRA (TIGER)*/
 
@@ -240,10 +256,10 @@ p {
 }
 
 .home-container .works-container .work-box#omy-extra .tape-img {
-  width: 450px;
+  width: 380px;
   position: absolute;
-  bottom: 40px;
-  left: -400px;
+  bottom: 60px;
+  left: -330px;
   transform: rotate(-10deg);
   z-index: 1000;
 }
@@ -265,14 +281,21 @@ p {
 }
 
 .home-container .works-container .work-box#omy-main .big-content {
-  height: 80%;
   position: absolute;
-  bottom: -50px;
+  top: 170px;
 }
 
 .home-container .works-container .work-box#omy-main .big-content img {
   width: 100%;
   height: auto;
+}
+
+.home-container .works-container .work-box#omy-main .big-content .omy-stars {
+  width: 90px;
+  position: absolute;
+  bottom: -60px;
+  right: -20px;
+  transform: rotate(-190deg);
 }
 
 /* KIEHL'S */
@@ -367,6 +390,7 @@ p {
   align-items: center;
   background-color: #000;
   position: relative;
+  mix-blend-mode: difference;
 }
 
 .home-container .about-container .big-about {

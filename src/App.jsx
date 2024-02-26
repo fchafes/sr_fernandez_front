@@ -51,6 +51,7 @@ function App() {
 
           <div className='work-box' id='playtime-paris'>
             <div className='big-content'>
+              <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='stars-img'/>
               <img src="src/assets/images/whale.png" alt="whale" className='whale-img'/>
               <img src="src/assets/gif/playtime.gif" alt="playtime_paris_poster" />
             </div>
@@ -61,6 +62,7 @@ function App() {
 
           <div className='work-box' id='zonza'>
             <h2>ZONZA!</h2>
+            <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='zonza-stars'/>
             <div className='big-content'>
               <img src="src/assets/images/zonza.jpg" alt="zonza_bottles" />
             </div>
@@ -85,6 +87,7 @@ function App() {
             <h2>OMY</h2>
             <div className='big-content'>
               <img src="src/assets/images/omy_pack.png" alt="omy_packaging" />
+              <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='omy-stars'/>
             </div>
           </div>
           
