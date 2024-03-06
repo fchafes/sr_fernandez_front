@@ -1,0 +1,28 @@
+.sticky-container-detail {
+    position: fixed;
+    left: 4em;
+    bottom: 0;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.7em 0em;
+    z-index: 900;
+  }
+
+  .sticky-container-detail .menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: "plaak43-bold";
+    font-size: 1.3em;
+    gap: 5px;
+    color: #fff;
+  }
+
+  .sticky-container-detail .menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .sticky-container-detail .menu ul img {
+    width: 50px;
+  }

@@ -1,26 +1,21 @@
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <>
       <div className='sticky-container'>
-        <div className='logo'>
-          <h2>Sr. Fernandez</h2>
-          <img src='src/assets/images/yellow_star.png' alt="decorative_yellow_star" />
-        </div>
-        <div className='navbar'>
           <div className='menu'>
             <ul>
-              <li>ABOUT ME</li>
+              <li><Link to="/">WORKS</Link></li>
               -
-              <li>WORKS</li>
+              <li><Link to="/">ABOUT</Link></li>
               -
-              <li>CONTACT</li>
+              <li><Link to="/">CONTACT</Link></li>
               -
               <li><img src='src/assets/images/sr_iso.png' alt="iso_logo_elephant" /></li>
             </ul>
           </div>
-        </div>
       </div>
     </>
   )

@@ -1,0 +1,46 @@
+.work-container {
+  display: flex;
+  height: 100vh;
+}
+
+.work-container .text-container {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 2em;
+
+}
+
+.work-container .text-container h2 {
+  font-family: "rza-black";
+  font-size: 1em;
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2em;
+}
+
+.work-container .text-container h1 {
+  font-size: 3em;
+  color: #EFFF55;
+}
+
+.work-container .text-container p {
+  font-size: 1.4em;
+  color: #ffffff;
+  margin-bottom: 1em;
+  line-height: 1;
+}
+
+.work-container .img-container {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  overflow: auto;
+}
+
+.work-container .img-container img {
+  width: 100%;
+}
