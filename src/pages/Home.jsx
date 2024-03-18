@@ -2,29 +2,50 @@ import './Home.css'
 import Marquee from "react-fast-marquee";
 import HorizontalScroll from '../components/HorizontalScroll';
 import Navbar from '../components/Navbar'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import StickyNote from '../components/StickyNote';
 import stickyNotesData from '../data/stickyNotesData';
+import MadeIn from '../components/MadeIn';
 
 function Home() {
   const stickyText = stickyNotesData;
+  const navigate = useNavigate();
+  const [showGlitch, setShowGlitch] = useState(false);
+  const handleGlitch = () => {
+    setShowGlitch(true);
+    setTimeout(() => {
+      setShowGlitch(false);
+      navigate('/contact');
+    }, 1000);
+  };
 
   return (
     <>
       <HorizontalScroll>
       <Navbar/>
+      <MadeIn/>
+      {showGlitch && (
+        <video autoPlay controls preload="metada" className='glitch'>
+          <source src="src/assets/videos/glitch_2.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      )}
       <div className='home-container'>
-        <div className='text-box'>
-          <div className='logo'>
-            <h2>Sr. Fernandez</h2>
-            <img src='src/assets/images/yellow_star.png' alt="decorative_yellow_star" />
+
+        {/* ------ WORKS CONTAINER ------ */}
+
+        <div className='works-container'>
+          <div className='logo-box'>
+            <div className='logo'>
+              <h2>Sr. Fernandez</h2>
+              <img src='src/assets/images/yellow_star.png' alt="decorative_yellow_star" />
+            </div>
           </div>
           <div className='title-and-sub'>
             <h1>DIRECTION<br />ARTISTIQUE</h1>
             <h3>BRANDING / GRAPHISME / PHOTOGRAPHIE /<br/> MOTION DESIGN / ILLUSTRATION / SCENOGRAPHIE</h3>
           </div>
-        </div>
-        <div className='works-container'>
           
           {/* ------ PETIT BALLON ------ */}
 
@@ -53,17 +74,18 @@ function Home() {
               <img src="src/assets/images/arrow_wine.png" alt="arrow_pointing_wine"/>
               <p>cliquez pour voir ce<br />qu'il y a à l'intérieur</p>
             </div>
-            <div className='extra-content'>
-              <img src="src/assets/images/bottle_petit_ballon_low.png" alt="wine_bottle" className='wine_bottle'/>
-            </div>
           </div>
           
           {/* ------ AA ------ */}
 
           <div className='work-box' id='aa'>
+          <div className='extra-content'>
+              <img src="src/assets/images/bottle_petit_ballon_low.png" alt="wine_bottle" className='wine_bottle'/>
+            </div>
             <Link to="/aa">
-              <img src="src/assets/images/petit-ballon-squares.png" alt="" />
+              <img src="src/assets/images/Aa_home.png" alt="" className='aa_square'/>
             </Link>
+            <div className='blue_square'></div>
             <Marquee className='marquee'>Sr. Fernandez - Sr. Fernandez -&nbsp;</Marquee>
           </div>
           
@@ -167,11 +189,15 @@ function Home() {
 
         <div className='about-container'>
           <div className='big-about'>
-            <h3>ABOOOUT!&nbsp;&nbsp;</h3>
+            <h3>ABOOOUT!&nbsp;</h3>
           </div>
-          <div className='big-about' id='behind'>
+          <div className='big-about behind'>
             <h3>AB</h3>
             <img src="src/assets/gif/about.gif" alt="" />
+          </div>
+          <div className='big-about behind'>
+            <h3>ABOO</h3>
+            <img src="src/assets/gif/about_2.gif" alt="" />
           </div>
           <div className='sticker-container'>
           <div className='sticker-container-relative'>
@@ -180,13 +206,13 @@ function Home() {
             <StickyNote startPoint="first" endPoint="visible-1" data={stickyText[0].text} />
             <StickyNote startPoint="second" endPoint="visible-2" data={stickyText[1].text} />
             <StickyNote startPoint="third" endPoint="visible-3" data={stickyText[2].text} />
-            <img src="src/assets/images/yellow_tape.png" alt="" className='yellow_tape' id='second'/>
           </div>
           </div>
           <div className='contact-container'>
-            <div className='contact-button'>
-              <p>CONTACT!</p>
-            </div>
+            <img src="src/assets/images/yellow_tape.png" alt="" className='yellow_tape' id='second'/>
+            <Link to='#' className='contact-button' onClick={handleGlitch}>
+              CONTACT!
+            </Link>
             <img src="src/assets/images/stars.png" alt="decorative_stars" id='stars'/>
             <img src="src/assets/images/big_iso.png" alt="elephant_logo" id='big-iso'/>
             <div className='contact-message'>

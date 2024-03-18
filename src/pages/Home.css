@@ -5,40 +5,14 @@
   padding-left: 2em;
 }
 
-.home-container .text-box {
-  height: 100vh;
-  padding-top: 2em;
-}
-
-  .home-container .text-box .logo {
-    position: relative;
-    margin-bottom: 1.5em;
-    z-index: 0;
-  }
-  
-  .home-container .text-box .logo img {
-    width: 100px;
-    position: absolute;
-    top: -20px;
-    left: -30px;
-  }
-  
-  .home-container .text-box .logo h2 {
-    font-family: "rza-black";
-    font-size: 1.5em;
-    letter-spacing: 2px;
-    position: relative;
-    z-index: 900;
-  }
-
-
-.home-container .text-box .title-and-sub h3 {
-  font-family: "plaak24-light";
-  font-size: 1.2em;
-}
-
-.home-container .text-box .title-and-sub h1 {
-  z-index: 1000;
+/* VIDEOS GLITCH */
+.glitch {
+  position: absolute;
+  width: 110vw;
+  height: 110vh;
+  z-index: 10000;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* WORKS CONTAINER */
@@ -48,12 +22,54 @@
   display: flex;
   align-items: flex-start;
   padding: 4.5em;
+  padding-left: 0;
+  position: relative;
 }
 
 .home-container .works-container a {
   text-decoration: none;
   color: #000;
 }
+
+.home-container .works-container .logo-box {
+  height: 100vh;
+  position: absolute;
+  top: 30px;
+}
+
+  .home-container .works-container .logo-box .logo {
+    position: relative;
+  }
+  
+  .home-container .works-container .logo-box .logo img {
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+  }
+  
+  .home-container .works-container .logo-box .logo h2 {
+    font-family: "rza-black";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .home-container .works-container .title-and-sub {
+    z-index: 1000;
+    margin-right: 3em;
+  }
+
+.home-container .works-container .title-and-sub h3 {
+  font-family: "plaak24-light";
+  font-size: 1.2em;
+}
+
+.home-container .works-container .title-and-sub h1 {
+  z-index: 1000;
+}
+
 
 /* PETIT BALLON #1 */
 
@@ -121,19 +137,6 @@
   top: -40px;
 }
 
-.home-container .works-container .work-box#petit-ballon-2 .extra-content {
-  width: 300px;
-  position: absolute;
-  right: -20px;
-  top: -200px;
-  z-index: 899;
-}
-
-.home-container .works-container .work-box#petit-ballon-2 .extra-content .wine_bottle {
-  height: 650px;
-  transform: rotate(-20deg);
-}
-
 /* AA - MARQUEE */
 
 .home-container .works-container .work-box#aa {
@@ -144,11 +147,35 @@
   flex-direction: column;
 }
 
-.home-container .works-container .work-box#aa img {
-  width: 400px;
+.home-container .works-container .work-box#aa .extra-content {
+  width: 300px;
   position: absolute;
-  left: 0;
+  left: -285px;
+  top: -200px;
+  z-index: 899;
+}
+
+.home-container .works-container .work-box#aa .extra-content .wine_bottle {
+  height: 650px;
+  transform: rotate(-20deg);
+}
+
+.home-container .works-container .work-box#aa .aa_square {
+  width: 300px;
+  position: absolute;
+  left: -20px;
   top: 70px;
+  z-index: 1000;
+}
+
+.home-container .works-container .work-box#aa .blue_square {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 40px;
+  top: 150px;
+  z-index: 1;
+  background-color: #664aff;
 }
 
 .home-container .works-container .work-box#aa .marquee {
@@ -438,14 +465,14 @@
   margin-top: -60px;
 }
 
-.home-container .about-container .big-about#behind {
+.home-container .about-container .big-about.behind {
   position: absolute;
   left: 0;
   z-index: 0;
   display: flex;
 }
 
-.home-container .about-container .big-about#behind img {
+.home-container .about-container .big-about.behind img {
   width: auto;
   height: 405px;
   margin-left: 50px;
@@ -482,14 +509,15 @@
   transform: rotate(12deg);
 }
 
-.home-container .about-container .sticker-container-relative .yellow_tape#second {
-  bottom: 500px;
-  left: 2550px;
-  transform: rotate(-12deg);
-}
-
-
 /* ------ CONTACT CONTAINER ------ */
+
+.home-container .about-container .contact-container .yellow_tape {
+  bottom: 450px;
+  right: 200px;
+  transform: rotate(-12deg);
+  position: absolute;
+  width: 250px;
+}
 
 .home-container .about-container .contact-container {
   background-color: #EFFF55;
@@ -500,17 +528,22 @@
   align-items: center;
   justify-content:space-between;
   padding: 4.5em 0;
+  z-index: 900;
 }
 
-.home-container .about-container .contact-container .contact-button {
-  padding: 1.4em;
-  border: 2px solid #000;
+.home-container .about-container .contact-container a.contact-button {
+  padding: 0.5em;
+  border: 1px solid #000;
   border-radius: 50%;
-}
-
-.home-container .about-container .contact-container .contact-button p {
+  text-decoration: none;
   font-size: 3em;
   font-family: 'plaak43-bold';
+  color: #000;
+}
+
+.home-container .about-container .contact-container a.contact-button:hover {
+  background-color: #000;
+  color: #EFFF55;
 }
 
 .home-container .about-container .contact-container img#stars {

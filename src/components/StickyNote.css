@@ -3,7 +3,7 @@
   padding: 1em;
   white-space: wrap;
   position: absolute;
-  transition: opacity 0.7s cubic-bezier(0.42, 0, 0.58, 1) 0.2s, bottom 0.7s cubic-bezier(0.42, 0, 0.58, 1) 0.2s;
+  transition: opacity 0.7s cubic-bezier(0.42, 0, 0.58, 1), bottom 0.7s cubic-bezier(0.42, 0, 0.58, 1);
   opacity: 0;
 }
 
@@ -21,7 +21,7 @@
 .sticky-note.second {
   width: 340px;
   bottom: 430px;
-  left: 1450px;
+  left: 1600px;
 }
 
 .sticky-note.visible-2 {

@@ -1,0 +1,14 @@
+.sticky-credits {
+  position: fixed;
+  right: 2em;
+  bottom: 0;
+  padding: 1em 0em;
+  font-family: "plaak24-light";
+  font-size: 1em;
+  z-index: 1000;
+}
+
+.sticky-credits a {
+  text-decoration: none;
+  color: #000;
+}

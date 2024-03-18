@@ -2,6 +2,7 @@ import './WorkDetail.css'
 import NavbarDetail from '../components/NavbarDetail'
 import { useParams } from 'react-router-dom';
 import workData from '../data/workData';
+import { Link } from 'react-router-dom';
 
 function WorkDetail() {
   const { url } = useParams();
@@ -13,7 +14,7 @@ function WorkDetail() {
       <NavbarDetail />
       <div className='work-container'>
         <div className='text-container'>
-            <h2>Sr. Fernandez</h2>
+        <Link to="/">Sr. Fernandez</Link>
             <h1>{work.title}</h1>
             {paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>

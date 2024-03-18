@@ -1,0 +1,47 @@
+.contact-page-container {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-page-container .contact-box {
+  display: inline-block;
+  height: 100vh;
+  margin-left: 2em;
+  padding: 0;
+  padding-top: 4em;
+}
+
+.contact-page-container .contact-box .link-box {
+  padding: 2em 0;
+  border-bottom: 2px solid #EFFF55;
+  position: relative;
+}
+
+.contact-page-container .contact-box .link-box.bottomless {
+  border-bottom: 0;
+}
+
+.contact-page-container .contact-box .link-box a {
+  color: #EFFF55;
+  text-decoration: none;
+  font-family: "rza-bold";
+  font-size: 2.3em;
+  letter-spacing: 1.5px;
+}
+
+.contact-page-container .contact-box .link-box .contact-smile {
+  width: 90px;
+  position: absolute;
+  right: 0;
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

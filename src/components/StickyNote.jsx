@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 function StickyNote( { startPoint, endPoint, data } ) {
   const [effectActivated, setEffectActivated] = useState(false);
-  const { ref, inView } = useInView({ threshold: 1 });
+  const { ref, inView } = useInView({ threshold: 0.5 });
 
   if (inView && !effectActivated) {
     setEffectActivated(true);
