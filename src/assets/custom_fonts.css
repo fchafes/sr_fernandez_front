@@ -11,4 +11,15 @@
 @font-face {
     font-family: 'plaak24-light';
     src: url('../assets/fonts/Plaak4-24-Light.otf') format('truetype');
+}
+
+
+  @font-face {
+    font-family: 'rza-medium';
+    src: url('../assets/fonts/Rza-Medium.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'rza-bold';
+    src: url('../assets/fonts/Rza-Bold.otf') format('truetype');
   }

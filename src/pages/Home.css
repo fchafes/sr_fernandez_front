@@ -2,25 +2,25 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  padding-left: 4em;
+  padding-left: 2em;
 }
 
 .home-container .text-box {
   height: 100vh;
-  margin-right: 2em;
   padding-top: 2em;
 }
 
   .home-container .text-box .logo {
     position: relative;
-    margin-bottom: 4em;
+    margin-bottom: 1.5em;
+    z-index: 0;
   }
   
   .home-container .text-box .logo img {
     width: 100px;
     position: absolute;
     top: -20px;
-    left: -60px;
+    left: -30px;
   }
   
   .home-container .text-box .logo h2 {
@@ -28,13 +28,17 @@
     font-size: 1.5em;
     letter-spacing: 2px;
     position: relative;
-    z-index: 1000;
+    z-index: 900;
   }
 
 
 .home-container .text-box .title-and-sub h3 {
   font-family: "plaak24-light";
   font-size: 1.2em;
+}
+
+.home-container .text-box .title-and-sub h1 {
+  z-index: 1000;
 }
 
 /* WORKS CONTAINER */
@@ -144,18 +148,18 @@
   width: 400px;
   position: absolute;
   left: 0;
-  top: 50px;
+  top: 70px;
 }
 
 .home-container .works-container .work-box#aa .marquee {
   background-color: #e2ff40;
   width: 140%;
-  height: 90px;
+  height: 70px;
   position: absolute;
   left: -80px;
-  bottom: 130px;
+  bottom: 120px;
   transform: rotate(4deg);
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: "rza-black";
   letter-spacing: 1px;
   z-index: 1;
@@ -484,42 +488,6 @@
   transform: rotate(-12deg);
 }
 
-
-/* YELLOW TEXT BOX */
-
-.home-container .about-container .sticker-container-relative .yellow-text-box {
-  background-color: #EFFF55;
-  width: 200px;
-  padding: 1em;
-  white-space: wrap;
-  position: absolute;
-  transform: translateY(-50%);
-  transition: top 0.5s ease;
-}
-
-.home-container .about-container .sticker-container-relative .yellow-text-box p {
-  margin: 0;
-  font-family: 'plaak43-bold';
-  font-size: 1.1em;
-  line-height: 1;
-}
-
-.home-container .about-container .sticker-container-relative .yellow-text-box.first {
-  bottom: 130px;
-  left: 1175px;
-}
-
-.home-container .about-container .sticker-container-relative .yellow-text-box#second {
-  width: 340px;
-  bottom: 430px;
-  left: 1450px;
-}
-
-.home-container .about-container .sticker-container-relative .yellow-text-box#third {
-  width: 230px;
-  bottom: 250px;
-  left: 2000px;
-}
 
 /* ------ CONTACT CONTAINER ------ */
 

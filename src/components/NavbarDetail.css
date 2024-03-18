@@ -1,10 +1,9 @@
 .sticky-container-detail {
     position: fixed;
-    left: 4em;
     bottom: 0;
     justify-content: space-between;
     flex-direction: column;
-    padding: 0.7em 0em;
+    padding: 0.7em 2em;
     z-index: 900;
   }
 

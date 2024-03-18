@@ -3,8 +3,11 @@ import Marquee from "react-fast-marquee";
 import HorizontalScroll from '../components/HorizontalScroll';
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
+import StickyNote from '../components/StickyNote';
+import stickyNotesData from '../data/stickyNotesData';
 
 function Home() {
+  const stickyText = stickyNotesData;
 
   return (
     <>
@@ -71,7 +74,7 @@ function Home() {
             <div className='big-content'>
               <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='stars-img'/>
               <img src="src/assets/gif/whale.gif" alt="whale" className='whale-img'/>
-              <img src="src/assets/gif/playtime.gif" alt="playtime_paris_poster" />
+              <img src="src/assets/images/playtime_home.png" alt="playtime_paris_poster" />
             </div>
             <h2>PLAYTIME PARIS - NY</h2>
           </Link>
@@ -174,18 +177,9 @@ function Home() {
           <div className='sticker-container-relative'>
             <img src="src/assets/images/sticker.png" alt="" id='sticker'/>
             <img src="src/assets/images/yellow_tape.png" alt="" className='yellow_tape' id='first'/>
-            <div className='yellow-text-box first' >
-              <p>Directeur artistique,<br /> graphiste et réalisateur<br /> audiovisuel depuis 2007 avec<br /> un profil créatif, j’ai l’expérience nécessaire pour répondre à vos besoins.
-              </p>
-            </div>
-            <div className='yellow-text-box' id='second'>
-              <p>Je crois que la synergie d’une équipe fournit les<br /> meilleurs résultats et que la créativité est sans fin<br /> et ne doit pas se limiter aux ressources.
-              </p>
-            </div>
-            <div className='yellow-text-box' id='third'>
-              <p>Croisons nos chemins pour créer<br /> ensemble de belles histoires.
-              </p>
-            </div>
+            <StickyNote startPoint="first" endPoint="visible-1" data={stickyText[0].text} />
+            <StickyNote startPoint="second" endPoint="visible-2" data={stickyText[1].text} />
+            <StickyNote startPoint="third" endPoint="visible-3" data={stickyText[2].text} />
             <img src="src/assets/images/yellow_tape.png" alt="" className='yellow_tape' id='second'/>
           </div>
           </div>
