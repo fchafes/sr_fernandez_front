@@ -51,16 +51,14 @@ function Home() {
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_01.gif`} className='glitch'/>
       )}
-      
+
+      {/* ---- HOME CONTAINER ---- */}
       <div className='home-container' ref={scrollToLeftRef}>
-        {/* ------ WORKS CONTAINER ------ */}
-
         
-
+        {/* ------ WORKS CONTAINER ------ */}
         <div className='works-container'>
 
           {/* ---- LOGO, TITLE AND SUB ---- */}
-
           <div className='work-box'>
             <div className='title-and-sub'>
               <h2>Sr. Fernandez</h2>
@@ -71,7 +69,6 @@ function Home() {
           </div>
           
           {/* ------ PETIT BALLON ------ */}
-
           <div className='work-box' id='petit-ballon'>
             <Link to="/lpb-box-premium">
               <div className='big-content'>
@@ -86,7 +83,6 @@ function Home() {
           </div>
           
           {/* ------ PETIT BALLON 2 ------ */}
-
           <div className='work-box' id='petit-ballon-2'>
             <Link to="/lpb-foire-aux-vin">
               <div className='big-content'>
@@ -100,7 +96,6 @@ function Home() {
           </div>
           
           {/* ------ AA ------ */}
-
           <div className='work-box' id='aa'>
           <div className='extra-content'>
               <img src={`${bucket}/images/bottle_petit_ballon_low.png`} alt="wine_bottle" className='wine_bottle'/>
@@ -113,7 +108,6 @@ function Home() {
           </div>
           
           {/* ------ PLAYTIME PARIS ------ */}
-
           <div className='work-box' id='playtime-paris'>
           <Link to="/playtime-paris-ny">
             <div className='big-content'>
@@ -126,7 +120,6 @@ function Home() {
           </div>
 
           {/* ------ ZONZA ------ */}
-
           <div className='work-box' id='zonza'>
             <Link to="/zonza">
               <h2>ZONZA!</h2>
@@ -140,7 +133,6 @@ function Home() {
           </div>
           
           {/* ------ OMY EXTRA ------ */}
-
           <div className='work-box' id='omy-extra'>
             <div className='message-box'>
               <p>cliquez ici pour<br />rencontrer<br />mes potes</p>
@@ -155,7 +147,6 @@ function Home() {
           </div>
 
           {/* ------ OMY MAIN ------ */}
-
           <div className='work-box' id='omy-main'>
             <Link to="/omy-stick-it">
               <h2>OMY</h2>
@@ -169,7 +160,6 @@ function Home() {
           </div>
           
           {/* ------ KIEHL'S ------ */}
-
           <div className='work-box' id='kiehls'>
             <div className='align-box'>
               <h2>KIEHL'S</h2>
@@ -180,7 +170,6 @@ function Home() {
           </div>
 
           {/* ------ PAIKEA ------ */}
-
           <div className='work-box' id='paikea'>
             <div className='align-box'>
               <div className='big-content'>
@@ -193,7 +182,6 @@ function Home() {
           </div>
 
           {/* ------ CIDER ------ */}
-
           <div className='work-box' id='cider'>
             <Link to="/cider">
               <h2>CIDER</h2>
@@ -208,8 +196,6 @@ function Home() {
 
 
         {/* ------ ABOUT CONTAINER ------ */}
-
-        
         <div className='about-container'>
           <div className='big-about'>
             <h3 ref={scrollToAboutRef}>ABOOOUT!&nbsp;</h3>

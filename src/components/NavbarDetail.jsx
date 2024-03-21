@@ -17,7 +17,7 @@ function NavbarDetail( { handleGlitch } ) {
               -
               <li><Link to="/contact">CONTACT</Link></li>
               -
-              <li><img src='src/assets/images/sr_iso_white.png' alt="iso_logo_elephant" /></li>
+              <li><img src='https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr_iso_white.png' alt="iso_logo_elephant" /></li>
             </ul>
           </div>
       </div>

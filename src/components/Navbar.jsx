@@ -2,6 +2,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom';
 
 function Navbar({ scrollToLeft, scrollToAbout, handleGlitch }) {
+  const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const handleWorks = () => {
     scrollToLeft();
   };
