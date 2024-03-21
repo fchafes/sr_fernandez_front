@@ -33,7 +33,7 @@ function Contact() {
             <a href='tel:+33644006666'>+ 33 6 44 00 66 66</a>
           </div>
           <div className='link-box bottomless'>
-            <a href='http://vimeo.com' target='_blank'>vimeo</a>
+            <a href='https://vimeo.com/user22695304' target='_blank'>vimeo</a>
           </div>
           <div className='link-box bottomless'>
             <img src={`${bucket}/images/contact_smile.png`} alt="smiley_face" className='contact-smile'/>
