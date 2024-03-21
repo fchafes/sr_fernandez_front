@@ -2,8 +2,8 @@ import './Home.css'
 import Marquee from "react-fast-marquee";
 import HorizontalScroll from '../components/HorizontalScroll';
 import Navbar from '../components/Navbar'
-import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useState, useRef, useEffect } from 'react';
 import StickyNote from '../components/StickyNote';
 import stickyNotesData from '../data/stickyNotesData';
 import MadeIn from '../components/MadeIn';
@@ -17,34 +17,53 @@ function Home() {
     setTimeout(() => {
       setShowGlitch(false);
       navigate('/contact');
-    }, 1000);
+    }, 400);
   };
-
+  const scrollToLeftRef = useRef(null);
+  const scrollToLeft = () => {
+    if (scrollToLeftRef.current) {
+      scrollToLeftRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToAboutRef = useRef(null);
+  const scrollToAbout = () => {
+    if (scrollToAboutRef.current) {
+      scrollToAboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToContactRef = useRef(null);
+  const scrollToContact = () => {
+    if (scrollToContactRef.current) {
+      scrollToContactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <>
       <HorizontalScroll>
-      <Navbar/>
+      <Navbar
+      scrollToLeft={scrollToLeft}
+      scrollToAbout={scrollToAbout}
+      handleGlitch={handleGlitch}
+      />
       <MadeIn/>
       {showGlitch && (
-        <video autoPlay controls preload="metada" className='glitch'>
-          <source src="src/assets/videos/glitch_2.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
-        </video>
+        <img src='src/assets/gif/glitch_01.gif' className='glitch'/>
       )}
-      <div className='home-container'>
-
+      <div className='home-container' ref={scrollToLeftRef}>
         {/* ------ WORKS CONTAINER ------ */}
 
         <div className='works-container'>
-          <div className='logo-box'>
-            <div className='logo'>
+
+        {/* ---- LOGO, TITLE AND SUB ---- */}
+
+          <div className='work-box'>
+            <div className='title-and-sub'>
               <h2>Sr. Fernandez</h2>
               <img src='src/assets/images/yellow_star.png' alt="decorative_yellow_star" />
+              <h1>DIRECTION<br />ARTISTIQUE</h1>
+              <h3>BRANDING / GRAPHISME / PHOTOGRAPHIE /<br/> MOTION DESIGN / ILLUSTRATION / SCENOGRAPHIE</h3>
             </div>
-          </div>
-          <div className='title-and-sub'>
-            <h1>DIRECTION<br />ARTISTIQUE</h1>
-            <h3>BRANDING / GRAPHISME / PHOTOGRAPHIE /<br/> MOTION DESIGN / ILLUSTRATION / SCENOGRAPHIE</h3>
           </div>
           
           {/* ------ PETIT BALLON ------ */}
@@ -57,7 +76,7 @@ function Home() {
               <h2>LE PETIT BALLON</h2>
             </Link>
             <div className='message-box'>
-              <p>Créativité et l'innovation<br /> au service des idées</p>
+              <p>CRÉATIVITÉ ANTICONFORMISTE<br /> AU SERVICE DES IDÉES</p>
               <img src="src/assets/images/smile.png" alt="smiley_face" className='smile-img'/>
             </div>
           </div>
@@ -71,8 +90,8 @@ function Home() {
               </div>
             </Link>
             <div className='arrow_wine_box'>
-              <img src="src/assets/images/arrow_wine.png" alt="arrow_pointing_wine"/>
-              <p>cliquez pour voir ce<br />qu'il y a à l'intérieur</p>
+              <img src="src/assets/images/arrow.png" alt="arrow_pointing_wine"/>
+              <p>C'EST PAS LA FOIRE À LA SAUCISSE,<br /> C'EST LA FOIRE AUX VINS,<br /> CLIQUEZ ICI</p>
             </div>
           </div>
           
@@ -86,7 +105,7 @@ function Home() {
               <img src="src/assets/images/Aa_home.png" alt="" className='aa_square'/>
             </Link>
             <div className='blue_square'></div>
-            <Marquee className='marquee'>Sr. Fernandez - Sr. Fernandez -&nbsp;</Marquee>
+            <Marquee className='marquee'>Sr. Fernandez - Sr. Fernandez - Sr. Fernandez -&nbsp;</Marquee>
           </div>
           
           {/* ------ PLAYTIME PARIS ------ */}
@@ -186,10 +205,10 @@ function Home() {
 
         {/* ------ ABOUT CONTAINER ------ */}
 
-
+        
         <div className='about-container'>
           <div className='big-about'>
-            <h3>ABOOOUT!&nbsp;</h3>
+            <h3 ref={scrollToAboutRef}>ABOOOUT!&nbsp;</h3>
           </div>
           <div className='big-about behind'>
             <h3>AB</h3>
@@ -221,6 +240,7 @@ function Home() {
             </div>
           </div>
         </div>
+        
       </div>
       </HorizontalScroll>
     </>

@@ -1,12 +1,28 @@
 import './Contact.css'
 import NavbarDetail from '../components/NavbarDetail'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 function Contact() {
+  const navigate = useNavigate();
+  const [showGlitch, setShowGlitch] = useState(false);
+  const handleGlitch = () => {
+    setShowGlitch(true);
+    setTimeout(() => {
+      setShowGlitch(false);
+      navigate('/');
+    }, 400);
+  };
 
   return (
     <>
-      <NavbarDetail />
+      <NavbarDetail
+      handleGlitch={handleGlitch}
+      />
+      {showGlitch && (
+        <img src='src/assets/gif/glitch_02.gif' className='glitch'/>
+      )}
+
       <div className='contact-page-container'>
         <div className='contact-box'>
           <div className='link-box'>

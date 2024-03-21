@@ -46,3 +46,16 @@
   font-size: 1.1em;
   line-height: 1;
 }
+
+/* ------ RESPONSIVE STYLE ------ */
+
+@media screen and (min-width: 1440px) {
+  .sticky-note.first {
+    bottom: 130px;
+    left: 1115px;
+  }
+  
+  .sticky-note.visible-1 {
+    bottom: 170px;
+  }
+}
