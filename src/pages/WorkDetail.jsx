@@ -40,7 +40,7 @@ function WorkDetail() {
 
       <div className='work-container'>
         <div className='text-container'>
-        <Link to="#" onClick={handleGlitch2}>Sr. Fernandez</Link>
+            <Link to="#" onClick={handleGlitch2}>Sr. Fernandez</Link>
             <h1>{work.title}</h1>
             {paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>

@@ -6,6 +6,7 @@
     flex-direction: column;
     padding: 0.7em 0em;
     z-index: 900;
+    mix-blend-mode: difference;
   }
 
   .sticky-container .menu ul {
@@ -15,13 +16,18 @@
     font-family: "plaak43-bold";
     font-size: 1.3em;
     gap: 5px;
+    color: #ffffff;
   }
 
   .sticky-container .menu ul li a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
   }
-  
-  .sticky-container .menu ul img {
-    width: 50px;
+
+  .sticky-container .menu ul .iso-svg {
+    width: 53px;
+    height: 34px;
+    background-color: rgb(255, 255, 255);
+    mask: url(src/assets/images/sr-iso-01.svg) no-repeat center / contain;
+    -webkit-mask: url(src/assets/images/sr-iso-01.svg) no-repeat center / contain;
   }

@@ -50,12 +50,15 @@ function Home() {
       {showGlitch && (
         <img src='src/assets/gif/glitch_01.gif' className='glitch'/>
       )}
+      
       <div className='home-container' ref={scrollToLeftRef}>
         {/* ------ WORKS CONTAINER ------ */}
 
+        
+
         <div className='works-container'>
 
-        {/* ---- LOGO, TITLE AND SUB ---- */}
+          {/* ---- LOGO, TITLE AND SUB ---- */}
 
           <div className='work-box'>
             <div className='title-and-sub'>

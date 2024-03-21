@@ -23,7 +23,7 @@ function Navbar({ scrollToLeft, scrollToAbout, handleGlitch }) {
               -
               <li><Link to="#" onClick={handleContact}>CONTACT</Link></li>
               -
-              <li><img src='src/assets/images/sr_iso.png' alt="iso_logo_elephant" /></li>
+              <li><div className='iso-svg'></div></li>
             </ul>
           </div>
       </div>
