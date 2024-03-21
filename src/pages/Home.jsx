@@ -109,14 +109,14 @@ function Home() {
           
           {/* ------ PLAYTIME PARIS ------ */}
           <div className='work-box' id='playtime-paris'>
-          <Link to="/playtime-paris-ny">
+            <Link to="/playtime-paris-ny">
             <div className='big-content'>
               <img src={`${bucket}/images/stars_whale.png`} alt="decorative-stars" className='stars-img'/>
               <img src={`${bucket}/gif/whale.gif`} alt="whale" className='whale-img'/>
               <img src={`${bucket}/images/playtime_home.png`} alt="playtime_paris_poster" />
             </div>
             <h2>PLAYTIME PARIS - NY</h2>
-          </Link>
+            </Link>
           </div>
 
           {/* ------ ZONZA ------ */}
@@ -219,6 +219,7 @@ function Home() {
           </div>
           <div className='contact-container'>
             <img src={`${bucket}/images/yellow_tape.png`} alt="" className='yellow_tape' id='second'/>
+            <div className='big-contact'>
             <Link to='#' className='contact-button' onClick={handleGlitch}>
               CONTACT!
             </Link>
@@ -227,6 +228,7 @@ function Home() {
             <div className='contact-message'>
               <img src={`${bucket}/images/big_smile.png`} alt="smiley_face"/>
               <h4>Nous sommes faits pour<br /> travailler ensemble.</h4>
+            </div>
             </div>
           </div>
         </div>
