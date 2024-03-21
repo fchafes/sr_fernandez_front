@@ -7,10 +7,10 @@ const workData = [
         "paragraph_2": "direction artistique et realisation du shooting."
       },
       "images": [
-        "src/assets/images/petit_balloon/petit_balloon_1.jpg",
-        "src/assets/images/petit_balloon/petit_balloon_2.jpg",
-        "src/assets/images/petit_balloon/petit_balloon_3.jpg",
-        "src/assets/images/petit_balloon/petit_balloon_4.jpg"
+        "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_1.jpg",
+        "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_2.jpg",
+        "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_3.jpg",
+        "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_4.jpg"
       ]
     },
     {
@@ -22,9 +22,9 @@ const workData = [
           "paragraph_3": "le bleu nuit fait référence au cycle de la lune, paramètre essentiel dans la fabrication du vin biodynamique."
         },
         "images": [
-          "src/assets/images/petit_balloon_b/petit_balloon_b_1.jpg", 
-          "src/assets/images/petit_balloon_b/petit_balloon_b_2.jpg",
-          "src/assets/images/petit_balloon_b/petit_balloon_b_3.png" 
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/petit_balloon_b_1.jpg", 
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/petit_balloon_b_2.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/petit_balloon_b_3.png" 
         ]
       },
       {
@@ -35,14 +35,14 @@ const workData = [
           "paragraph_2": "Pour la saison 2022, j'ai travaillé sur la DIRECTION ARTISTIQUE ET CREATION DE LA nouvelle identité visuelle répondant au thème 'WONDERLAN'."
         }, 
         "images": [
-          "src/assets/images/playtime_paris/playtime_1.jpg",
-          "src/assets/images/playtime_paris/playtime_2.jpg",
-          "src/assets/images/playtime_paris/playtime_3.jpg",
-          "src/assets/images/playtime_paris/playtime_4.jpg",
-          "src/assets/images/playtime_paris/playtime_5.jpg",
-          "src/assets/images/playtime_paris/playtime_6.jpg",
-          "src/assets/images/playtime_paris/playtime_7.png",
-          "src/assets/images/playtime_paris/playtime_8.gif"
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_1.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_2.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_3.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_4.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_5.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_6.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_7.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_8.gif"
         ]
       },
       {
@@ -54,11 +54,11 @@ const workData = [
           "paragraph_3": "Les travaux exposés questionnaient tous la thématique de la conservation des océans."
         },
         "images": [
-          "src/assets/images/paikea/paikea_1.jpg",
-          "src/assets/images/paikea/paikea_2.png",
-          "src/assets/images/paikea/paikea_3.png",
-          "src/assets/images/paikea/paikea_4.png",
-          "src/assets/images/paikea/paikea_5.jpg"
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_1.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_2.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_3.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_4.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_5.jpg"
         ]
       },
       {
@@ -69,13 +69,13 @@ const workData = [
           "paragraph_2": "Conception du nouveau branding autour d'un axe minimaliste impactant : une colorimétrie forte, des gros caractères, des jeux de typographie et des formes géométriques."
         },
         "images": [
-          "src/assets/images/aa/aa_1.jpg",
-          "src/assets/images/aa/aa_2.jpg",
-          "src/assets/images/aa/aa_3.jpg",
-          "src/assets/images/aa/aa_4.jpg",
-          "src/assets/images/aa/aa_5.jpg",
-          "src/assets/images/aa/aa_6.jpg",
-          "src/assets/images/aa/aa_7.jpg"
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_1.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_2.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_3.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_4.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_5.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_6.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_7.jpg"
         ]
       },
       {
@@ -85,11 +85,11 @@ const workData = [
           "paragraph_1": "Les bières ZONZA! sont des bières utilisant des procédés de fabrication et des goûts originaux comme le coing, l’huître ou le piment. 'Zonza' caractérise en espagnol une personne étourdie ou à l’ouest, c’est pourquoi j’ai choisi de créer des illustrations poétiques et absurdes."
         },
         "images": [
-          "src/assets/images/zonza/zonza_1.jpg",
-          "src/assets/images/zonza/zonza_2.jpg",
-          "src/assets/images/zonza/zonza_3.jpg",
-          "src/assets/images/zonza/zonza_4.jpg",
-          "src/assets/images/zonza/zonza_5.jpg"
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_1.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_2.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_3.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_4.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_5.jpg"
         ]
       },
       {
@@ -101,9 +101,9 @@ const workData = [
           "paragraph_3": "J'ai fait le choix des lignes souples et des formes organiques pour symboliser l'ergonomie et le confort, et le grain pour rappeler la richesses des matières et des textures."
         },
         "images": [
-          "src/assets/images/cider/cider_1.jpg",
-          "src/assets/images/cider/cider_2.jpg",
-          "src/assets/images/cider/cider_3.jpg"
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/cider_1.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/cider_2.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/cider_3.jpg"
         ]
       },
       {
@@ -114,11 +114,11 @@ const workData = [
           "paragraph_2": "Pour ce projet, j'ai géré la direction artistique et réalisé les photographies et la retouche photo du produit Stick It."
         },
         "images": [
-          "src/assets/images/omy_stick_it/omy_stick_1.png",
-          "src/assets/images/omy_stick_it/omy_stick_2.png",
-          "src/assets/images/omy_stick_it/omy_stick_3.png",
-          "src/assets/images/omy_stick_it/omy_stick_4.png",
-          "src/assets/images/omy_stick_it/omy_stick_5.gif"
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_1.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_2.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_3.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_4.png",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_5.gif"
         ]
       },
       {
@@ -129,11 +129,11 @@ const workData = [
           "paragraph_2": "OMY Maison imagine et conçoit des produits joyeux, graphiques et intelligents pour la maison. Chaque collection est caractérisée par des formats extraordinaires, du minuscule au géant, par des couleurs vives, par son dessin fort et un humour décalé. \nLes Masques 3D sont des masques à monter soi-même, à colorier, à porter ou à accrocher, pour enfants et grands enfants."
         },
         "images": [
-          "src/assets/images/omy_3d/omy_3d_1.jpg",
-          "src/assets/images/omy_3d/omy_3d_2.jpg",
-          "src/assets/images/omy_3d/omy_3d_3.jpg",
-          "src/assets/images/omy_3d/omy_3d_4.jpg",
-          "src/assets/images/omy_3d/omy_3d_5.jpg" 
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_1.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_2.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_3.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_4.jpg",
+          "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_5.jpg" 
         ]
       }
   ];

@@ -118,8 +118,8 @@ function Home() {
           <Link to="/playtime-paris-ny">
             <div className='big-content'>
               <img src={`${bucket}/images/stars_whale.png`} alt="decorative-stars" className='stars-img'/>
-              <img src="src/assets/gif/whale.gif" alt="whale" className='whale-img'/>
-              <img src="src/assets/images/playtime_home.png" alt="playtime_paris_poster" />
+              <img src={`${bucket}/gif/whale.gif`} alt="whale" className='whale-img'/>
+              <img src={`${bucket}/images/playtime_home.png`} alt="playtime_paris_poster" />
             </div>
             <h2>PLAYTIME PARIS - NY</h2>
           </Link>
@@ -131,10 +131,10 @@ function Home() {
             <Link to="/zonza">
               <h2>ZONZA!</h2>
             </Link>
-            <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='zonza-stars'/>
+            <img src={`${bucket}/images/stars_whale.png`} alt="decorative-stars" className='zonza-stars'/>
             <div className='big-content'>
               <Link to="/zonza">
-                <img src="src/assets/images/zonza.jpg" alt="zonza_bottles" />
+                <img src={`${bucket}/images/zonza.jpg`} alt="zonza_bottles" />
               </Link>
             </div>
           </div>
@@ -144,14 +144,14 @@ function Home() {
           <div className='work-box' id='omy-extra'>
             <div className='message-box'>
               <p>cliquez ici pour<br />rencontrer<br />mes potes</p>
-              <img src="src/assets/images/arrow.png" alt="arroy" className='arrow-img'/>
+              <img src={`${bucket}/images/arrow.png`} alt="arroy" className='arrow-img'/>
             </div>
             <div className='big-content'>
             <Link to="/omy-3d">
-              <img src="src/assets/images/tiger.png" alt="tiger" />
+              <img src={`${bucket}/images/tiger.png`} alt="tiger" />
             </Link>
             </div>
-            <img src="src/assets/images/yellow_tape.png" alt="" className='tape-img'/>
+            <img src={`${bucket}/images/yellow_tape.png`} alt="" className='tape-img'/>
           </div>
 
           {/* ------ OMY MAIN ------ */}
@@ -162,9 +162,9 @@ function Home() {
             </Link>
             <div className='big-content'>
               <Link to="/omy-stick-it">
-                <img src="src/assets/images/omy_pack.png" alt="omy_packaging" />
+                <img src={`${bucket}/images/omy_pack.png`} alt="omy_packaging" />
               </Link>
-              <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='omy-stars'/>
+              <img src={`${bucket}/images/stars_whale.png`} alt="decorative-stars" className='omy-stars'/>
             </div>
           </div>
           
@@ -174,7 +174,7 @@ function Home() {
             <div className='align-box'>
               <h2>KIEHL'S</h2>
               <div className='big-content'>
-                <img src="src/assets/gif/kiehls.gif" alt="kiehls_product" />
+                <img src={`${bucket}/gif/kiehls.gif`} alt="kiehls_product" />
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ function Home() {
             <div className='align-box'>
               <div className='big-content'>
                 <Link to="/paikea">
-                  <img src="src/assets/images/paikea.png" alt="paikea_street_poster" />
+                  <img src={`${bucket}/images/paikea.png`} alt="paikea_street_poster" />
                 </Link>
               </div>
               <Link to="/paikea">PAIKEA</Link>
@@ -200,7 +200,7 @@ function Home() {
             </Link>
             <div className='big-content'>
               <Link to="/cider">
-                <img src="src/assets/images/organic_shape.png" alt="cider" />
+                <img src={`${bucket}/images/organic_shape.png`} alt="cider" />
               </Link>
             </div>
           </div>
@@ -216,30 +216,30 @@ function Home() {
           </div>
           <div className='big-about behind'>
             <h3>AB</h3>
-            <img src="src/assets/gif/about.gif" alt="" />
+            <img src={`${bucket}/gif/about.gif`} alt="" />
           </div>
           <div className='big-about behind'>
             <h3>ABOO</h3>
-            <img src="src/assets/gif/about_2.gif" alt="" />
+            <img src={`${bucket}/gif/about_2.gif`} alt="" />
           </div>
           <div className='sticker-container'>
           <div className='sticker-container-relative'>
-            <img src="src/assets/images/sticker.png" alt="" id='sticker'/>
-            <img src="src/assets/images/yellow_tape.png" alt="" className='yellow_tape' id='first'/>
+            <img src={`${bucket}/images/sticker.png`} alt="" id='sticker'/>
+            <img src={`${bucket}/images/yellow_tape.png`} alt="" className='yellow_tape' id='first'/>
             <StickyNote startPoint="first" endPoint="visible-1" data={stickyText[0].text} />
             <StickyNote startPoint="second" endPoint="visible-2" data={stickyText[1].text} />
             <StickyNote startPoint="third" endPoint="visible-3" data={stickyText[2].text} />
           </div>
           </div>
           <div className='contact-container'>
-            <img src="src/assets/images/yellow_tape.png" alt="" className='yellow_tape' id='second'/>
+            <img src={`${bucket}/images/yellow_tape.png`} alt="" className='yellow_tape' id='second'/>
             <Link to='#' className='contact-button' onClick={handleGlitch}>
               CONTACT!
             </Link>
-            <img src="src/assets/images/stars.png" alt="decorative_stars" id='stars'/>
-            <img src="src/assets/images/big_iso.png" alt="elephant_logo" id='big-iso'/>
+            <img src={`${bucket}/images/stars.png`} alt="decorative_stars" id='stars'/>
+            <img src={`${bucket}/images/big_iso.png`} alt="elephant_logo" id='big-iso'/>
             <div className='contact-message'>
-              <img src="src/assets/images/big_smile.png" alt="smiley_face"/>
+              <img src={`${bucket}/images/big_smile.png`} alt="smiley_face"/>
               <h4>Nous sommes faits pour<br /> travailler ensemble.</h4>
             </div>
           </div>
