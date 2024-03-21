@@ -9,6 +9,7 @@ import stickyNotesData from '../data/stickyNotesData';
 import MadeIn from '../components/MadeIn';
 
 function Home() {
+  const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const stickyText = stickyNotesData;
   const navigate = useNavigate();
   const [showGlitch, setShowGlitch] = useState(false);
@@ -48,7 +49,7 @@ function Home() {
       />
       <MadeIn/>
       {showGlitch && (
-        <img src='src/assets/gif/glitch_01.gif' className='glitch'/>
+        <img src={`${bucket}/gif/glitch_01.gif`} className='glitch'/>
       )}
       
       <div className='home-container' ref={scrollToLeftRef}>
@@ -63,7 +64,7 @@ function Home() {
           <div className='work-box'>
             <div className='title-and-sub'>
               <h2>Sr. Fernandez</h2>
-              <img src='src/assets/images/yellow_star.png' alt="decorative_yellow_star" />
+              <img src={`${bucket}/images/yellow_star.png`} alt="decorative_yellow_star" />
               <h1>DIRECTION<br />ARTISTIQUE</h1>
               <h3>BRANDING / GRAPHISME / PHOTOGRAPHIE /<br/> MOTION DESIGN / ILLUSTRATION / SCENOGRAPHIE</h3>
             </div>
@@ -74,13 +75,13 @@ function Home() {
           <div className='work-box' id='petit-ballon'>
             <Link to="/lpb-box-premium">
               <div className='big-content'>
-                <img src="src/assets/gif/petit_ballon.gif" alt="petit_ballon_gif" />
+                <img src={`${bucket}/gif/petit_ballon.gif`} alt="petit_ballon_gif" />
               </div>
               <h2>LE PETIT BALLON</h2>
             </Link>
             <div className='message-box'>
               <p>CRÉATIVITÉ ANTICONFORMISTE<br /> AU SERVICE DES IDÉES</p>
-              <img src="src/assets/images/smile.png" alt="smiley_face" className='smile-img'/>
+              <img src={`${bucket}/images/smile.png`} alt="smiley_face" className='smile-img'/>
             </div>
           </div>
           
@@ -89,11 +90,11 @@ function Home() {
           <div className='work-box' id='petit-ballon-2'>
             <Link to="/lpb-foire-aux-vin">
               <div className='big-content'>
-                <img src="src/assets/images/main_petit_ballon.jpg" alt="photo_set_bottles" />
+                <img src={`${bucket}/images/main_petit_ballon.jpg`} alt="photo_set_bottles" />
               </div>
             </Link>
             <div className='arrow_wine_box'>
-              <img src="src/assets/images/arrow.png" alt="arrow_pointing_wine"/>
+              <img src={`${bucket}/images/arrow.png`} alt="arrow_pointing_wine"/>
               <p>C'EST PAS LA FOIRE À LA SAUCISSE,<br /> C'EST LA FOIRE AUX VINS,<br /> CLIQUEZ ICI</p>
             </div>
           </div>
@@ -102,10 +103,10 @@ function Home() {
 
           <div className='work-box' id='aa'>
           <div className='extra-content'>
-              <img src="src/assets/images/bottle_petit_ballon_low.png" alt="wine_bottle" className='wine_bottle'/>
+              <img src={`${bucket}/images/bottle_petit_ballon_low.png`} alt="wine_bottle" className='wine_bottle'/>
             </div>
             <Link to="/aa">
-              <img src="src/assets/images/Aa_home.png" alt="" className='aa_square'/>
+              <img src={`${bucket}/images/Aa_home.png`} alt="aa-img" className='aa_square'/>
             </Link>
             <div className='blue_square'></div>
             <Marquee className='marquee'>Sr. Fernandez - Sr. Fernandez - Sr. Fernandez -&nbsp;</Marquee>
@@ -116,7 +117,7 @@ function Home() {
           <div className='work-box' id='playtime-paris'>
           <Link to="/playtime-paris-ny">
             <div className='big-content'>
-              <img src="src/assets/images/stars_whale.png" alt="decorative-stars" className='stars-img'/>
+              <img src={`${bucket}/images/stars_whale.png`} alt="decorative-stars" className='stars-img'/>
               <img src="src/assets/gif/whale.gif" alt="whale" className='whale-img'/>
               <img src="src/assets/images/playtime_home.png" alt="playtime_paris_poster" />
             </div>
