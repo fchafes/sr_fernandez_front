@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 function Contact() {
+  const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const navigate = useNavigate();
   const [showGlitch, setShowGlitch] = useState(false);
   const handleGlitch = () => {
@@ -20,7 +21,7 @@ function Contact() {
       handleGlitch={handleGlitch}
       />
       {showGlitch && (
-        <img src='src/assets/gif/glitch_02.gif' className='glitch'/>
+        <img src={`${bucket}/gif/glitch_02.gif`} className='glitch'/>
       )}
 
       <div className='contact-page-container'>
@@ -35,7 +36,7 @@ function Contact() {
             <a href='http://vimeo.com' target='_blank'>vimeo</a>
           </div>
           <div className='link-box bottomless'>
-            <img src="src/assets/images/contact_smile.png" alt="smiley_face" className='contact-smile'/>
+            <img src={`${bucket}/images/contact_smile.png`} alt="smiley_face" className='contact-smile'/>
           </div>
         </div>
       </div>

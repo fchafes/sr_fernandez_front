@@ -5,6 +5,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useState } from 'react';
 
 function WorkDetail() {
+  const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const { url } = useParams();
   const work = workData.find(work => work.url === url);
   const paragraphs = Object.values(work.description);
@@ -32,10 +33,10 @@ function WorkDetail() {
       handleGlitch={handleGlitch}
       />
       {showGlitch && (
-        <img src='src/assets/gif/glitch_03.gif' className='glitch'/>
+        <img src={`${bucket}/gif/glitch_03.gif`} className='glitch'/>
       )}
       {showGlitch2 && (
-        <img src='src/assets/gif/glitch_04.gif' className='glitch'/>
+        <img src={`${bucket}/gif/glitch_04.gif`} className='glitch'/>
       )}
 
       <div className='work-container'>
