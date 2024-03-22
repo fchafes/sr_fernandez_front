@@ -1,13 +1,13 @@
+html {
+  background-color: #fff;
+}
+
 .home-container {
   height: 100vh;
   display: flex;
   align-items: center;
   padding-left: 2em;
   background-color: #fff;
-
-
-  /* --- resolver fondo blanco mixblend --- */
-
 }
 
 /* VIDEOS GLITCH */
@@ -23,16 +23,14 @@
 /* WORKS CONTAINER */
 
 .home-container .works-container {
-  /* height: 100%; */
-  height: 700px;
-
+  height: 80vh;
+  max-height: 680px;
   display: flex;
   align-items: center;
-  padding: 4.5em;
   padding-left: 0;
-  padding-top: 5.3em;
+  padding-right: 4.5em;
   position: relative;
-  background-color: #fff;
+  /* background-color: #ca1212; */
 }
 
 .home-container .works-container a {
@@ -71,7 +69,8 @@
 /* WORK BOX */
 
 .home-container .works-container .work-box {
-  height: 105%;
+  height: 100%;
+  
   /* background-color: #625e7a; */
 }
 
@@ -79,25 +78,26 @@
 /* PETIT BALLON #1 */
 
 .home-container .works-container .work-box#petit-ballon {
-  width: 600px;
+  width: 650px;
+  height: 600px;
   position: relative;
 }
 
 .home-container .works-container .work-box#petit-ballon .big-content {
-  height: 80%;
+  /* height: 80%; */
   overflow: hidden;
   margin-bottom: 1em;
 }
 
 .home-container .works-container .work-box#petit-ballon .big-content img {
-  width: 130%;
+  width: 100%;
   height: auto;
 }
 
 .home-container .works-container .work-box#petit-ballon .message-box {
   width: 150px;
   position: absolute;
-  top: 40px;
+  top: 10px;
   right: -160px;
 }
 
@@ -125,15 +125,13 @@
   height: auto;
 }
 
-/* PETIT BALLON 2 EXTRA */
-
-.home-container .works-container .work-box#petit-ballon-2 .arrow_wine_box {
+.home-container .works-container .work-box#petit-ballon-2 .big-content .arrow_wine_box {
   position: absolute;
-  left: 220px;
-  top: 50px;
+  left: 300px;
+  top: -60px;
 }
 
-.home-container .works-container .work-box#petit-ballon-2 .arrow_wine_box img {
+.home-container .works-container .work-box#petit-ballon-2 .big-content .arrow_wine_box img {
   width: 40px;
   position: absolute;
   right: 180px;
@@ -187,12 +185,12 @@
   height: 70px;
   position: absolute;
   left: -80px;
-  bottom: 100px;
+  top: 400px;
   transform: rotate(4deg);
   font-size: 2em;
   font-family: "rza-black";
   letter-spacing: 1px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* PLAYTIME PARIS */
@@ -206,7 +204,7 @@
 }
 
 .home-container .works-container .work-box#playtime-paris .big-content {
-  height: 80%;
+  /* height: 100%; */
   margin-bottom: 3em;
 }
 
@@ -252,9 +250,8 @@
 
 .home-container .works-container .work-box#zonza h2 {
   margin-left: 0.1em;
+  margin-bottom: 5px;
   font-size: 9em;
-  position: absolute;
-  top: -25px;
 }
 
 .home-container .works-container .work-box#zonza .zonza-stars {
@@ -268,7 +265,6 @@
 .home-container .works-container .work-box#zonza .big-content {
   height: 80%;
   margin-bottom: 1.5em;
-  position: absolute;
   bottom: 0;
 }
 
@@ -312,10 +308,10 @@
 }
 
 .home-container .works-container .work-box#omy-extra .tape-img {
-  width: 380px;
+  width: 300px;
   position: absolute;
-  bottom: 60px;
-  left: -330px;
+  top: 460px;
+  left: -250px;
   transform: rotate(-10deg);
   z-index: 1000;
 }
@@ -410,6 +406,7 @@
   width: 80px;
   position: relative;
   text-align: center;
+  z-index: 1000;
 }
 
 .home-container .works-container .work-box#cider h2 {
@@ -438,7 +435,6 @@
   align-items: center;
   background-color: #000;
   position: relative;
-  mix-blend-mode: difference;
 }
 
 .home-container .about-container .big-about {
@@ -572,6 +568,9 @@
 
 
 
+
+
+
 /* ------ RESPONSIVE STYLE - WIDE SCREENS ------ */
 
 @media screen and (min-width: 1440px) {
@@ -579,14 +578,8 @@
   /* ---- WORKS CONTAINER ---- */
 
   .home-container .works-container {
-    /* height: 100%; */
-    height: 800px;
-  }
-
-  .home-container .works-container .work-box {
-    /* height: 125%; */
-    /* height: 100%; */
-    /* background-color: #e2ff40; */
+    height: 80vh;
+    /* max-height: 800px; */
   }
 
   /* ---- LOGO BOX ---- */
@@ -652,7 +645,8 @@
   /* ---- MARQUEE ---- */
 
   .home-container .works-container .work-box#aa .marquee {
-    bottom: 120px;
+    left: -80px;
+    top: 470px;
   }
 
   /* ---- PLAYTIME PARIS ---- */
@@ -674,6 +668,13 @@
 .home-container .works-container .work-box#zonza h2 {
   margin-left: 0.1em;
   top: -12px;
+}
+
+/* ---- YELLOW TAPE ---- */
+.home-container .works-container .work-box#omy-extra .tape-img {
+  top: 500px;
+  left:-330px;
+  
 }
 
 /* ---- TIGER ---- */
@@ -748,4 +749,22 @@
     width: auto;
     height: 440px;
   }
+}
+
+
+
+@media screen and (min-height: 840px) {
+
+  .home-container .works-container .work-box#cider {
+    width: 140px;
+  }
+  .home-container .works-container .work-box#cider h2 {
+    left: 45px;
+  }
+  .home-container .works-container .work-box#cider .big-content {
+    width: 350px;
+    top: 50px;
+    left: -90px;
+  }
+
 }

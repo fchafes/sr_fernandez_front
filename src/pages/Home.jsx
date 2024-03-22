@@ -73,8 +73,8 @@ function Home() {
             <Link to="/lpb-box-premium">
               <div className='big-content'>
                 <img src={`${bucket}/gif/petit_ballon.gif`} alt="petit_ballon_gif" />
+                <h2>LE PETIT BALLON</h2>
               </div>
-              <h2>LE PETIT BALLON</h2>
             </Link>
             <div className='message-box'>
               <p>CRÉATIVITÉ ANTICONFORMISTE<br /> AU SERVICE DES IDÉES</p>
@@ -87,12 +87,12 @@ function Home() {
             <Link to="/lpb-foire-aux-vin">
               <div className='big-content'>
                 <img src={`${bucket}/images/main_petit_ballon.jpg`} alt="photo_set_bottles" />
+                <div className='arrow_wine_box'>
+                  <img src={`${bucket}/images/arrow.png`} alt="arrow_pointing_wine"/>
+                  <p>C'EST PAS LA FOIRE À LA SAUCISSE,<br /> C'EST LA FOIRE AUX VINS,<br /> CLIQUEZ ICI</p>
+                </div>
               </div>
             </Link>
-            <div className='arrow_wine_box'>
-              <img src={`${bucket}/images/arrow.png`} alt="arrow_pointing_wine"/>
-              <p>C'EST PAS LA FOIRE À LA SAUCISSE,<br /> C'EST LA FOIRE AUX VINS,<br /> CLIQUEZ ICI</p>
-            </div>
           </div>
           
           {/* ------ AA ------ */}
@@ -103,8 +103,9 @@ function Home() {
             <Link to="/aa">
               <img src={`${bucket}/images/Aa_home.png`} alt="aa-img" className='aa_square'/>
             </Link>
-            <div className='blue_square'></div>
             <Marquee className='marquee'>Sr. Fernandez - Sr. Fernandez - Sr. Fernandez -&nbsp;</Marquee>
+            <div className='blue_square'></div>
+            {/* <Marquee className='marquee'>Sr. Fernandez - Sr. Fernandez - Sr. Fernandez -&nbsp;</Marquee> */}
           </div>
           
           {/* ------ PLAYTIME PARIS ------ */}
@@ -114,8 +115,8 @@ function Home() {
               <img src={`${bucket}/images/stars_whale.png`} alt="decorative-stars" className='stars-img'/>
               <img src={`${bucket}/gif/whale.gif`} alt="whale" className='whale-img'/>
               <img src={`${bucket}/images/playtime_home.png`} alt="playtime_paris_poster" />
+              <h2>PLAYTIME PARIS - NY</h2>
             </div>
-            <h2>PLAYTIME PARIS - NY</h2>
             </Link>
           </div>
 
