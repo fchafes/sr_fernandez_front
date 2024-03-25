@@ -1,7 +1,7 @@
 import './Contact.css'
 import NavbarDetail from '../components/NavbarDetail'
 import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Contact() {
   const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
@@ -14,6 +14,11 @@ function Contact() {
       navigate('/');
     }, 400);
   };
+  useEffect(() => {
+    const preloadGlitch_02 = new Image();
+    preloadGlitch_02.src = `${bucket}/gif/glitch_02.gif`;
+    return () => {};
+  }, []);
 
   return (
     <>

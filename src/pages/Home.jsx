@@ -2,7 +2,7 @@ import './Home.css'
 import Marquee from "react-fast-marquee";
 import HorizontalScroll from '../components/HorizontalScroll';
 import Navbar from '../components/Navbar'
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
 import StickyNote from '../components/StickyNote';
 import stickyNotesData from '../data/stickyNotesData';
@@ -38,6 +38,12 @@ function Home() {
       scrollToContactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+    useEffect(() => {
+      const preloadGlitch_01 = new Image();
+      preloadGlitch_01.src = `${bucket}/gif/glitch_01.gif`;
+      return () => {};
+    }, []);
   
   return (
     <>

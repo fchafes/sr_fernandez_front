@@ -2,7 +2,7 @@ import './WorkDetail.css'
 import NavbarDetail from '../components/NavbarDetail'
 import workData from '../data/workData';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function WorkDetail() {
   const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
@@ -26,6 +26,13 @@ function WorkDetail() {
       navigate('/');
     }, 400);
   };
+  useEffect(() => {
+    const preloadGlitch_03 = new Image();
+    preloadGlitch_03.src = `${bucket}/gif/glitch_03.gif`;
+    const preloadGlitch_04 = new Image();
+    preloadGlitch_04.src = `${bucket}/gif/glitch_04.gif`;
+    return () => {};
+  }, []);
 
   return (
     <>
