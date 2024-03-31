@@ -229,7 +229,7 @@ function Home() {
             <div className='contact-button'><Link to='#' onClick={handleGlitch}>
               CONTACT!
             </Link></div>
-            <img src='src/assets/estrellas.gif' alt="decorative_stars" id='stars'/>
+            <img src={`${bucket}/gif/estrellas.gif`} alt="decorative_stars" id='stars'/>
             <img src={`${bucket}/images/big_iso.png`} alt="elephant_logo" id='big-iso'/>
             <div className='contact-message'>
               <img src={`${bucket}/images/big_smile.png`} alt="smiley_face"/>
