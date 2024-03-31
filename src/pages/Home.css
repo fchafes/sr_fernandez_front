@@ -163,14 +163,13 @@ html {
 .home-container .works-container .work-box#aa .extra-content {
   width: 300px;
   position: absolute;
-  left: -285px;
-  top: -200px;
+  left: -205px;
+  top: -180px;
   z-index: 899;
 }
 
 .home-container .works-container .work-box#aa .extra-content .wine_bottle {
   height: 650px;
-  transform: rotate(-20deg);
 }
 
 .home-container .works-container .work-box#aa .aa_square {
