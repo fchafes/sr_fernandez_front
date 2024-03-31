@@ -225,12 +225,11 @@ function Home() {
           </div>
           </div>
           <div className='contact-container'>
-            <img src={`${bucket}/images/yellow_tape.png`} alt="" className='yellow_tape' id='second'/>
             <div className='big-contact'>
-            <Link to='#' className='contact-button' onClick={handleGlitch}>
+            <div className='contact-button'><Link to='#' onClick={handleGlitch}>
               CONTACT!
-            </Link>
-            <img src={`${bucket}/images/stars.png`} alt="decorative_stars" id='stars'/>
+            </Link></div>
+            <img src='src/assets/estrellas.gif' alt="decorative_stars" id='stars'/>
             <img src={`${bucket}/images/big_iso.png`} alt="elephant_logo" id='big-iso'/>
             <div className='contact-message'>
               <img src={`${bucket}/images/big_smile.png`} alt="smiley_face"/>
