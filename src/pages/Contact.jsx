@@ -2,6 +2,7 @@ import './Contact.css'
 import NavbarDetail from '../components/NavbarDetail'
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import MadeIn from '../components/MadeIn';
 
 function Contact() {
   const bucket = "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
@@ -25,6 +26,7 @@ function Contact() {
       <NavbarDetail
       handleGlitch={handleGlitch}
       />
+      <MadeIn/>
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_02.gif`} className='glitch'/>
       )}
