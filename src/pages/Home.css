@@ -58,6 +58,7 @@ html {
   letter-spacing: 2px;
   position: absolute;
   top: -40px;
+  cursor: pointer !important;
 }
 
 .home-container .works-container .work-box .title-and-sub h3 {

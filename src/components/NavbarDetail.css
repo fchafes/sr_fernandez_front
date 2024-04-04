@@ -3,7 +3,7 @@
   bottom: 0;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0.7em 2em;
+  padding: 0.5em 2em;
   z-index: 900;
 }
 
@@ -15,7 +15,27 @@
   font-size: 1.3em;
   gap: 5px;
   color: #fff;
-  cursor: pointer !important;
+  cursor: auto !important;
+}
+
+.sticky-container-detail .menu ul li {
+  position: relative;
+}
+
+.sticky-container-detail .menu ul li .under-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 1px;
+  width: 0%;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.1s ease-in-out;
+}
+
+.sticky-container-detail .menu ul li:hover .under-line {
+  width: 97%;
 }
 
 .sticky-container-detail .menu ul li a {
@@ -27,4 +47,8 @@
 .sticky-container-detail .menu ul img {
   width: 50px;
   cursor: pointer !important;
+}
+
+.sticky-container-detail .menu ul :nth-child(4) {
+  padding-bottom: 3px;
 }

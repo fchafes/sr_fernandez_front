@@ -4,7 +4,7 @@
   bottom: 0;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0.7em 0em;
+  padding: 0.5em 0em;
   z-index: 10000;
   mix-blend-mode: difference;
 }
@@ -17,13 +17,34 @@
   font-size: 1.3em;
   gap: 5px;
   color: #ffffff;
-  cursor: pointer !important;
+  cursor: auto !important;
+}
+
+.sticky-container .menu ul li {
+  position: relative;
+}
+
+.sticky-container .menu ul li .under-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 1.5px;
+  width: 0%;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.1s ease-in-out;
+}
+
+.sticky-container .menu ul li:hover .under-line {
+  width: 97%;
 }
 
 .sticky-container .menu ul li a {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer !important;
+  
 }
 
 .sticky-container .menu ul .iso-svg {
@@ -35,4 +56,8 @@
   -webkit-mask: url(https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr-iso-01.svg)
     no-repeat center / contain;
     cursor: pointer !important;
+}
+
+.sticky-container .menu ul :nth-child(4) {
+  padding-bottom: 3px;
 }

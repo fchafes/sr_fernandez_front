@@ -19,27 +19,31 @@ function Navbar({ scrollToLeft, scrollToAbout, handleGlitch }) {
     <>
       <div
         className="sticky-container"
-        onMouseEnter={() => dispatch(toggleVisible())}
-        onMouseLeave={() => dispatch(toggleVisible())}
+        
       >
-        <div className="menu">
+        <div className="menu"
+        onMouseEnter={() => dispatch(toggleVisible())}
+        onMouseLeave={() => dispatch(toggleVisible())}>
           <ul>
             <li>
               <Link to="#" onClick={handleWorks}>
                 WORKS
               </Link>
+              <div className="under-line"></div>
             </li>
             -
             <li>
               <Link to="#" onClick={handleAbout}>
                 ABOUT
               </Link>
+              <div className="under-line"></div>
             </li>
             -
             <li>
               <Link to="#" onClick={handleContact}>
                 CONTACT
               </Link>
+              <div className="under-line"></div>
             </li>
             -
             <li>

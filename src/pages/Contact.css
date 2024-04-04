@@ -1,5 +1,3 @@
-
-
 .contact-page-container {
   background-color: #000;
   width: 100vw;
@@ -16,7 +14,7 @@
 
 .contact-page-container .contact-box .link-box {
   padding: 2em 0;
-  border-bottom: 2px solid #EFFF55;
+  border-bottom: 2px solid #efff55;
   position: relative;
 }
 
@@ -25,11 +23,12 @@
 }
 
 .contact-page-container .contact-box .link-box a {
-  color: #EFFF55;
+  color: #efff55;
   text-decoration: none;
   font-family: "rza-bold";
   font-size: 2.3em;
   letter-spacing: 1.5px;
+  cursor: pointer !important;
 }
 
 .contact-page-container .contact-box .link-box .contact-smile {

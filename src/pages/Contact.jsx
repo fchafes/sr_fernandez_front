@@ -2,9 +2,12 @@ import "./Contact.css";
 import NavbarContact from "../components/NavbarContact";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { toggleVisible } from "../redux/cursorReducer";
 import MadeIn from "../components/MadeIn";
 
 function Contact() {
+  const dispatch = useDispatch();
   const bucket =
     "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const navigate = useNavigate();
@@ -33,13 +36,30 @@ function Contact() {
       <div className="contact-page-container">
         <div className="contact-box">
           <div className="link-box">
-            <a href="mailto:camilofndz@gmail.com">camilofndz@gmail.com</a>
+            <a
+              href="mailto:camilofndz@gmail.com"
+              onMouseEnter={() => dispatch(toggleVisible())}
+              onMouseLeave={() => dispatch(toggleVisible())}
+            >
+              camilofndz@gmail.com
+            </a>
           </div>
           <div className="link-box">
-            <a href="tel:+33644006666">+ 33 6 44 00 66 66</a>
+            <a
+              href="tel:+33644006666"
+              onMouseEnter={() => dispatch(toggleVisible())}
+              onMouseLeave={() => dispatch(toggleVisible())}
+            >
+              + 33 6 44 00 66 66
+            </a>
           </div>
           <div className="link-box bottomless">
-            <a href="https://vimeo.com/user22695304" target="_blank">
+            <a
+              href="https://vimeo.com/user22695304"
+              target="_blank"
+              onMouseEnter={() => dispatch(toggleVisible())}
+              onMouseLeave={() => dispatch(toggleVisible())}
+            >
               vimeo
             </a>
           </div>

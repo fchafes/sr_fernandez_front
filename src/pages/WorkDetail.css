@@ -16,6 +16,7 @@
   letter-spacing: 3px;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  cursor: pointer !important;
 }
 
 .work-container .text-container h1 {

@@ -70,7 +70,12 @@ function Home() {
             {/* ---- LOGO, TITLE AND SUB ---- */}
             <div className="work-box">
               <div className="title-and-sub">
-                <h2>Sr. Fernandez</h2>
+                <h2
+                  onMouseEnter={() => dispatch(toggleVisible())}
+                  onMouseLeave={() => dispatch(toggleVisible())}
+                >
+                  Sr. Fernandez
+                </h2>
                 <img
                   src={`${bucket}/images/yellow_star.png`}
                   alt="decorative_yellow_star"
