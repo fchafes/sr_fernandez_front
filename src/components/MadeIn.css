@@ -7,9 +7,11 @@
   font-size: 1em;
   z-index: 1000;
   mix-blend-mode: difference;
+  cursor: pointer !important;
 }
 
 .sticky-credits a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer !important;
 }

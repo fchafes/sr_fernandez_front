@@ -7,8 +7,12 @@ import { useState, useRef, useEffect } from "react";
 import StickyNote from "../components/StickyNote";
 import stickyNotesData from "../data/stickyNotesData";
 import MadeIn from "../components/MadeIn";
+import { useDispatch } from "react-redux";
+import { togglePointer } from "../redux/cursorReducer";
+import { toggleVisible } from "../redux/cursorReducer";
 
 function Home() {
+  const dispatch = useDispatch();
   const bucket =
     "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const stickyText = stickyNotesData;
@@ -90,8 +94,17 @@ function Home() {
                   <img
                     src={`${bucket}/gif/petit_ballon.gif`}
                     alt="petit_ballon_gif"
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
                   />
-                  <h2>LE PETIT BALLON</h2>
+                  <h2
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
+                  >
+                    LE PETIT BALLON
+                  </h2>
                 </div>
               </Link>
               <div className="message-box">
@@ -114,6 +127,9 @@ function Home() {
                   <img
                     src={`${bucket}/images/main_petit_ballon.jpg`}
                     alt="photo_set_bottles"
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
                   />
                   <div className="arrow_wine_box">
                     <img
@@ -144,6 +160,9 @@ function Home() {
                   src={`${bucket}/images/Aa_home.png`}
                   alt="aa-img"
                   className="aa_square"
+                  onMouseEnter={() => dispatch(togglePointer())}
+                  onMouseLeave={() => dispatch(togglePointer())}
+                  onClick={() => dispatch(togglePointer())}
                 />
               </Link>
               <Marquee className="marquee">
@@ -169,8 +188,17 @@ function Home() {
                   <img
                     src={`${bucket}/images/playtime_home.png`}
                     alt="playtime_paris_poster"
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
                   />
-                  <h2>PLAYTIME PARIS - NY</h2>
+                  <h2
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
+                  >
+                    PLAYTIME PARIS - NY
+                  </h2>
                 </div>
               </Link>
             </div>
@@ -178,7 +206,13 @@ function Home() {
             {/* ------ ZONZA ------ */}
             <div className="work-box" id="zonza">
               <Link to="/zonza">
-                <h2>ZONZA!</h2>
+                <h2
+                  onMouseEnter={() => dispatch(togglePointer())}
+                  onMouseLeave={() => dispatch(togglePointer())}
+                  onClick={() => dispatch(togglePointer())}
+                >
+                  ZONZA!
+                </h2>
               </Link>
               <img
                 src={`${bucket}/images/stars_whale.png`}
@@ -187,7 +221,13 @@ function Home() {
               />
               <div className="big-content">
                 <Link to="/zonza">
-                  <img src={`${bucket}/images/zonza.jpg`} alt="zonza_bottles" />
+                  <img
+                    src={`${bucket}/images/zonza.jpg`}
+                    alt="zonza_bottles"
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
+                  />
                 </Link>
               </div>
             </div>
@@ -223,13 +263,22 @@ function Home() {
             {/* ------ OMY MAIN ------ */}
             <div className="work-box" id="omy-main">
               <Link to="/omy-stick-it">
-                <h2>OMY</h2>
+                <h2
+                  onMouseEnter={() => dispatch(togglePointer())}
+                  onMouseLeave={() => dispatch(togglePointer())}
+                  onClick={() => dispatch(togglePointer())}
+                >
+                  OMY
+                </h2>
               </Link>
               <div className="big-content">
                 <Link to="/omy-stick-it">
                   <img
                     src={`${bucket}/images/omy_pack.png`}
                     alt="omy_packaging"
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
                   />
                 </Link>
                 <img
@@ -258,21 +307,43 @@ function Home() {
                     <img
                       src={`${bucket}/images/paikea.png`}
                       alt="paikea_street_poster"
+                      onMouseEnter={() => dispatch(togglePointer())}
+                      onMouseLeave={() => dispatch(togglePointer())}
+                      onClick={() => dispatch(togglePointer())}
                     />
                   </Link>
                 </div>
-                <Link to="/paikea">PAIKEA</Link>
+                <Link
+                  to="/paikea"
+                  onMouseEnter={() => dispatch(togglePointer())}
+                  onMouseLeave={() => dispatch(togglePointer())}
+                  onClick={() => dispatch(togglePointer())}
+                >
+                  PAIKEA
+                </Link>
               </div>
             </div>
 
             {/* ------ CIDER ------ */}
             <div className="work-box" id="cider">
               <Link to="/cider">
-                <h2>CIDER</h2>
+                <h2
+                  onMouseEnter={() => dispatch(togglePointer())}
+                  onMouseLeave={() => dispatch(togglePointer())}
+                  onClick={() => dispatch(togglePointer())}
+                >
+                  CIDER
+                </h2>
               </Link>
               <div className="big-content">
                 <Link to="/cider">
-                  <img src={`${bucket}/images/organic_shape.png`} alt="cider" />
+                  <img
+                    src={`${bucket}/images/organic_shape.png`}
+                    alt="cider"
+                    onMouseEnter={() => dispatch(togglePointer())}
+                    onMouseLeave={() => dispatch(togglePointer())}
+                    onClick={() => dispatch(togglePointer())}
+                  />
                 </Link>
               </div>
             </div>
@@ -317,7 +388,11 @@ function Home() {
                 />
               </div>
             </div>
-            <div className="contact-container">
+            <div
+              className="contact-container"
+              onMouseEnter={() => dispatch(toggleVisible())}
+              onMouseLeave={() => dispatch(toggleVisible())}
+            >
               <div className="big-contact">
                 <div className="contact-button">
                   <Link to="#" onClick={handleGlitch}>

@@ -1,13 +1,15 @@
-import './App.css'
-import './assets/custom_fonts.css'
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import WorkDetail from './pages/WorkDetail';
+import "./App.css";
+import "./assets/custom_fonts.css";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import WorkDetail from "./pages/WorkDetail";
 import { Routes, Route, Navigate } from "react-router-dom";
+import { CustomCursor } from "./components/CustomCursor";
 
 function App() {
   return (
     <>
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -15,7 +17,7 @@ function App() {
         <Route path="/:url" element={<WorkDetail />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

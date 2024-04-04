@@ -26,6 +26,14 @@ function WorkDetail() {
       navigate('/');
     }, 400);
   };
+  const handleContactGlitch = () => {
+    setShowGlitch(true);
+    setTimeout(() => {
+      setShowGlitch(false);
+      navigate('/contact');
+    }, 400);
+  };
+
   useEffect(() => {
     const preloadGlitch_03 = new Image();
     preloadGlitch_03.src = `${bucket}/gif/glitch_03.gif`;
@@ -38,6 +46,7 @@ function WorkDetail() {
     <>
       <NavbarDetail
       handleGlitch={handleGlitch}
+      handleContactGlitch={handleContactGlitch}
       />
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_03.gif`} className='glitch'/>

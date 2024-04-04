@@ -1,5 +1,6 @@
 html {
   background-color: #fff;
+  cursor: none;
 }
 
 .home-container {
@@ -30,7 +31,6 @@ html {
   padding-left: 0;
   padding-right: 4.5em;
   position: relative;
-  /* background-color: #ca1212; */
 }
 
 .home-container .works-container a {
@@ -70,8 +70,6 @@ html {
 
 .home-container .works-container .work-box {
   height: 100%;
-
-  /* background-color: #625e7a; */
 }
 
 /* PETIT BALLON #1 */
@@ -83,7 +81,6 @@ html {
 }
 
 .home-container .works-container .work-box#petit-ballon .big-content {
-  /* height: 80%; */
   overflow: hidden;
   margin-bottom: 1em;
 }
@@ -207,15 +204,15 @@ html {
 /* PLAYTIME PARIS */
 
 .home-container .works-container .work-box#playtime-paris {
-  width: 600px;
+  width: 560px;
   position: relative;
   margin-left: 3em;
   z-index: 2;
   border: 0;
+  top: 30px;
 }
 
 .home-container .works-container .work-box#playtime-paris .big-content {
-  /* height: 100%; */
   margin-bottom: 3em;
 }
 
@@ -534,6 +531,7 @@ html {
   justify-content: center;
   align-items: center;
   z-index: 900;
+  cursor: auto !important;
 }
 
 .home-container .about-container .contact-container .big-contact {
@@ -543,6 +541,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 4.5em 0;
+  cursor: auto !important;
 }
 
 .home-container .about-container .contact-container .contact-button {
@@ -557,6 +556,7 @@ html {
 
 .home-container .about-container .contact-container .contact-button:hover {
   background-color: #000;
+  cursor: pointer !important;
 }
 
 @keyframes button {
@@ -579,10 +579,11 @@ html {
   font-family: "plaak43-bold";
   color: #000;
   animation-name: button;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   transition: color 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  cursor: pointer !important;
 }
 
 .home-container .about-container .contact-container .contact-button a:hover {
@@ -591,21 +592,25 @@ html {
 
 .home-container .about-container .contact-container img#stars {
   width: 90px;
+  cursor: auto !important;
 }
 
 .home-container .about-container .contact-container img#big-iso {
   width: 210px;
+  cursor: auto !important;
 }
 
 .home-container .about-container .contact-container .contact-message {
   text-align: center;
   height: auto;
   white-space: wrap;
+  cursor: auto !important;
 }
 
 .home-container .about-container .contact-container .contact-message img {
   width: 50px;
   margin-bottom: 0.5em;
+  cursor: auto !important;
 }
 
 .home-container .about-container .contact-container .contact-message h4 {
@@ -613,6 +618,7 @@ html {
   font-size: 1.5em;
   line-height: 0.9;
   text-align: left;
+  cursor: auto !important;
 }
 
 /* ------ RESPONSIVE STYLE - WIDE SCREENS ------ */
@@ -662,13 +668,13 @@ html {
   /* ---- WINE BOTTLE ---- */
 
   .home-container .works-container .work-box#aa .extra-content {
-    left: -340px;
-    top: -330px;
+    left: -220px;
+    top: -300px;
   }
 
   .home-container .works-container .work-box#aa .extra-content .wine_bottle {
     height: 850px;
-    transform: rotate(-20deg);
+    /* transform: rotate(-20deg); */
   }
 
   /* ---- AA ---- */
