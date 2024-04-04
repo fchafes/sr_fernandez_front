@@ -79,6 +79,7 @@ function Home() {
                 <img
                   src={`${bucket}/images/yellow_star.png`}
                   alt="decorative_yellow_star"
+                  loading="lazy"
                 />
                 <h1>
                   DIRECTION
@@ -99,6 +100,7 @@ function Home() {
                   <img
                     src={`${bucket}/gif/petit_ballon.gif`}
                     alt="petit_ballon_gif"
+                    loading="lazy"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
                     onClick={() => dispatch(togglePointer())}
@@ -121,6 +123,7 @@ function Home() {
                   src={`${bucket}/images/smile.png`}
                   alt="smiley_face"
                   className="smile-img"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -135,11 +138,13 @@ function Home() {
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
                     onClick={() => dispatch(togglePointer())}
+                    loading="lazy"
                   />
                   <div className="arrow_wine_box">
                     <img
                       src={`${bucket}/images/arrow.png`}
                       alt="arrow_pointing_wine"
+                      loading="lazy"
                     />
                     <p>
                       C'EST PAS LA FOIRE À LA SAUCISSE,
@@ -158,6 +163,7 @@ function Home() {
                   src={`${bucket}/images/petit_balloon_b/bottle.png`}
                   alt="wine_bottle"
                   className="wine_bottle"
+                  loading="lazy"
                 />
               </div>
               <Link to="/aa">
@@ -165,6 +171,7 @@ function Home() {
                   src={`${bucket}/images/Aa_home.png`}
                   alt="aa-img"
                   className="aa_square"
+                  loading="lazy"
                   onMouseEnter={() => dispatch(togglePointer())}
                   onMouseLeave={() => dispatch(togglePointer())}
                   onClick={() => dispatch(togglePointer())}
@@ -184,11 +191,13 @@ function Home() {
                     src={`${bucket}/images/stars_whale.png`}
                     alt="decorative-stars"
                     className="stars-img"
+                    loading="lazy"
                   />
                   <img
                     src={`${bucket}/gif/whale.gif`}
                     alt="whale"
                     className="whale-img"
+                    loading="lazy"
                   />
                   <img
                     src={`${bucket}/images/playtime_home.png`}
@@ -196,6 +205,7 @@ function Home() {
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
                     onClick={() => dispatch(togglePointer())}
+                    loading="lazy"
                   />
                   <h2
                     onMouseEnter={() => dispatch(togglePointer())}
@@ -223,6 +233,7 @@ function Home() {
                 src={`${bucket}/images/stars_whale.png`}
                 alt="decorative-stars"
                 className="zonza-stars"
+                loading="lazy"
               />
               <div className="big-content">
                 <Link to="/zonza">
@@ -232,6 +243,7 @@ function Home() {
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
                     onClick={() => dispatch(togglePointer())}
+                    loading="lazy"
                   />
                 </Link>
               </div>
@@ -251,17 +263,23 @@ function Home() {
                   src={`${bucket}/images/arrow.png`}
                   alt="arroy"
                   className="arrow-img"
+                  loading="lazy"
                 />
               </div>
               <div className="big-content">
                 <Link to="/omy-3d">
-                  <img src={`${bucket}/images/tiger.png`} alt="tiger" />
+                  <img
+                    src={`${bucket}/images/tiger.png`}
+                    alt="tiger"
+                    loading="lazy"
+                  />
                 </Link>
               </div>
               <img
                 src={`${bucket}/images/yellow_tape.png`}
                 alt=""
                 className="tape-img"
+                loading="lazy"
               />
             </div>
 
@@ -284,12 +302,14 @@ function Home() {
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
                     onClick={() => dispatch(togglePointer())}
+                    loading="lazy"
                   />
                 </Link>
                 <img
                   src={`${bucket}/images/stars_whale.png`}
                   alt="decorative-stars"
                   className="omy-stars"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -299,7 +319,11 @@ function Home() {
               <div className="align-box">
                 <h2>KIEHL'S</h2>
                 <div className="big-content">
-                  <img src={`${bucket}/gif/kiehls.gif`} alt="kiehls_product" />
+                  <img
+                    src={`${bucket}/gif/kiehls.gif`}
+                    alt="kiehls_product"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -315,6 +339,7 @@ function Home() {
                       onMouseEnter={() => dispatch(togglePointer())}
                       onMouseLeave={() => dispatch(togglePointer())}
                       onClick={() => dispatch(togglePointer())}
+                      loading="lazy"
                     />
                   </Link>
                 </div>
@@ -348,6 +373,7 @@ function Home() {
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
                     onClick={() => dispatch(togglePointer())}
+                    loading="lazy"
                   />
                 </Link>
               </div>
@@ -361,20 +387,26 @@ function Home() {
             </div>
             <div className="big-about behind">
               <h3>AB</h3>
-              <img src={`${bucket}/gif/about.gif`} alt="" />
+              <img src={`${bucket}/gif/about.gif`} alt="" loading="lazy" />
             </div>
             <div className="big-about behind">
               <h3>ABOO</h3>
-              <img src={`${bucket}/gif/about_2.gif`} alt="" />
+              <img src={`${bucket}/gif/about_2.gif`} alt="" loading="lazy" />
             </div>
             <div className="sticker-container">
               <div className="sticker-container-relative">
-                <img src={`${bucket}/images/sticker.png`} alt="" id="sticker" />
+                <img
+                  src={`${bucket}/images/sticker.png`}
+                  alt=""
+                  id="sticker"
+                  loading="lazy"
+                />
                 <img
                   src={`${bucket}/images/yellow_tape.png`}
                   alt=""
                   className="yellow_tape"
                   id="first"
+                  loading="lazy"
                 />
                 <StickyNote
                   startPoint="first"
@@ -408,16 +440,19 @@ function Home() {
                   src={`${bucket}/gif/estrellas.gif`}
                   alt="decorative_stars"
                   id="stars"
+                  loading="lazy"
                 />
                 <img
                   src={`${bucket}/images/big_iso.png`}
                   alt="elephant_logo"
                   id="big-iso"
+                  loading="lazy"
                 />
                 <div className="contact-message">
                   <img
                     src={`${bucket}/images/big_smile.png`}
                     alt="smiley_face"
+                    loading="lazy"
                   />
                   <h4>
                     Nous sommes faits pour
