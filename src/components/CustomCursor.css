@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   cursor: none !important;
-  /* mix-blend-mode: difference; */
 }
 
 @media screen and (max-width: 768px) {
