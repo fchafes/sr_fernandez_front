@@ -1,0 +1,67 @@
+.m-home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.m-home-container .top-media {
+  background-color: antiquewhite;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.m-home-container .bottom-media {
+  background-color: rgb(163, 242, 88);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.m-home-container .bottom-media .accordion {
+  background-color: blue;
+  flex: 1;
+}
+
+.m-home-container .bottom-media .accordion .tab {
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid #000;
+  height: 70px;
+  display: flex;
+}
+
+.m-home-container .bottom-media .accordion .tab .tab-left {
+  background-color: black;
+  height: 100%;
+  width: 25%;
+}
+
+.m-home-container .bottom-media .accordion .tab .tab-left img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid #000;
+}
+
+.m-home-container .bottom-media .accordion .tab .tab-right {
+  background-color: rgb(133, 86, 86);
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.m-home-container .bottom-media .accordion .tab .tab-right h3 {
+  font-family: "plaak43-bold";
+  font-size: 5em;
+  margin-bottom: 5px;
+}
+
+.m-home-container .bottom-media .m-home-footer {
+  background-color: aqua;
+  height: 70px;
+  border-top: 1px solid #000;
+}
