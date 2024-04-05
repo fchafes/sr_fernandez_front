@@ -10,6 +10,8 @@ import MadeIn from "../components/MadeIn";
 import { useDispatch } from "react-redux";
 import { togglePointer } from "../redux/cursorReducer";
 import { toggleVisible } from "../redux/cursorReducer";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 function Home() {
   const dispatch = useDispatch();
@@ -77,7 +79,7 @@ function Home() {
                   Sr. Fernandez
                 </h2>
                 <img
-                  src={`${bucket}/images/yellow_star.png`}
+                  src={`${bucket}/images/home/yellow_star.png`}
                   alt="decorative_yellow_star"
                   loading="lazy"
                 />
@@ -120,7 +122,7 @@ function Home() {
                   <br /> AU SERVICE DES IDÉES
                 </p>
                 <img
-                  src={`${bucket}/images/smile.png`}
+                  src={`${bucket}/images/home/smile.png`}
                   alt="smiley_face"
                   className="smile-img"
                   loading="lazy"
@@ -133,7 +135,7 @@ function Home() {
               <Link to="/lpb-foire-aux-vin">
                 <div className="big-content">
                   <img
-                    src={`${bucket}/images/main_petit_ballon.jpg`}
+                    src={`${bucket}/images/home/main_petit_ballon.webp`}
                     alt="photo_set_bottles"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -142,7 +144,7 @@ function Home() {
                   />
                   <div className="arrow_wine_box">
                     <img
-                      src={`${bucket}/images/arrow.png`}
+                      src={`${bucket}/images/home/arrow.png`}
                       alt="arrow_pointing_wine"
                       loading="lazy"
                     />
@@ -168,7 +170,7 @@ function Home() {
               </div>
               <Link to="/aa">
                 <img
-                  src={`${bucket}/images/Aa_home.png`}
+                  src={`${bucket}/images/home/Aa_home.png`}
                   alt="aa-img"
                   className="aa_square"
                   loading="lazy"
@@ -188,7 +190,7 @@ function Home() {
               <Link to="/playtime-paris-ny">
                 <div className="big-content">
                   <img
-                    src={`${bucket}/images/stars_whale.png`}
+                    src={`${bucket}/images/home/stars_whale.png`}
                     alt="decorative-stars"
                     className="stars-img"
                     loading="lazy"
@@ -200,7 +202,7 @@ function Home() {
                     loading="lazy"
                   />
                   <img
-                    src={`${bucket}/images/playtime_home.png`}
+                    src={`${bucket}/images/home/playtime_home.webp`}
                     alt="playtime_paris_poster"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -230,7 +232,7 @@ function Home() {
                 </h2>
               </Link>
               <img
-                src={`${bucket}/images/stars_whale.png`}
+                src={`${bucket}/images/home/stars_whale.png`}
                 alt="decorative-stars"
                 className="zonza-stars"
                 loading="lazy"
@@ -238,7 +240,7 @@ function Home() {
               <div className="big-content">
                 <Link to="/zonza">
                   <img
-                    src={`${bucket}/images/zonza.jpg`}
+                    src={`${bucket}/images/home/zonza.webp`}
                     alt="zonza_bottles"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -260,7 +262,7 @@ function Home() {
                   mes potes
                 </p>
                 <img
-                  src={`${bucket}/images/arrow.png`}
+                  src={`${bucket}/images/home/arrow.png`}
                   alt="arroy"
                   className="arrow-img"
                   loading="lazy"
@@ -269,14 +271,14 @@ function Home() {
               <div className="big-content">
                 <Link to="/omy-3d">
                   <img
-                    src={`${bucket}/images/tiger.png`}
+                    src={`${bucket}/images/home/tiger.webp`}
                     alt="tiger"
                     loading="lazy"
                   />
                 </Link>
               </div>
               <img
-                src={`${bucket}/images/yellow_tape.png`}
+                src={`${bucket}/images/home/yellow_tape.webp`}
                 alt=""
                 className="tape-img"
                 loading="lazy"
@@ -297,7 +299,7 @@ function Home() {
               <div className="big-content">
                 <Link to="/omy-stick-it">
                   <img
-                    src={`${bucket}/images/omy_pack.png`}
+                    src={`${bucket}/images/home/omy_pack.webp`}
                     alt="omy_packaging"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -306,7 +308,7 @@ function Home() {
                   />
                 </Link>
                 <img
-                  src={`${bucket}/images/stars_whale.png`}
+                  src={`${bucket}/images/home/stars_whale.png`}
                   alt="decorative-stars"
                   className="omy-stars"
                   loading="lazy"
@@ -334,7 +336,7 @@ function Home() {
                 <div className="big-content">
                   <Link to="/paikea">
                     <img
-                      src={`${bucket}/images/paikea.png`}
+                      src={`${bucket}/images/home/paikea.webp`}
                       alt="paikea_street_poster"
                       onMouseEnter={() => dispatch(togglePointer())}
                       onMouseLeave={() => dispatch(togglePointer())}
@@ -368,7 +370,7 @@ function Home() {
               <div className="big-content">
                 <Link to="/cider">
                   <img
-                    src={`${bucket}/images/organic_shape.png`}
+                    src={`${bucket}/images/home/organic_shape.webp`}
                     alt="cider"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -396,13 +398,13 @@ function Home() {
             <div className="sticker-container">
               <div className="sticker-container-relative">
                 <img
-                  src={`${bucket}/images/sticker.png`}
+                  src={`${bucket}/images/home/sticker.webp`}
                   alt=""
                   id="sticker"
                   loading="lazy"
                 />
                 <img
-                  src={`${bucket}/images/yellow_tape.png`}
+                  src={`${bucket}/images/home/yellow_tape.webp`}
                   alt=""
                   className="yellow_tape"
                   id="first"
@@ -443,7 +445,7 @@ function Home() {
                   loading="lazy"
                 />
                 <img
-                  src={`${bucket}/images/big_iso.png`}
+                  src={`${bucket}/images/home/big_iso.png`}
                   alt="elephant_logo"
                   id="big-iso"
                   loading="lazy"
