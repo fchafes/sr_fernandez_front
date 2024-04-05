@@ -442,19 +442,16 @@ function Home() {
                   src={`${bucket}/gif/estrellas.gif`}
                   alt="decorative_stars"
                   id="stars"
-                  loading="lazy"
                 />
                 <img
                   src={`${bucket}/images/home/big_iso.png`}
                   alt="elephant_logo"
                   id="big-iso"
-                  loading="lazy"
                 />
                 <div className="contact-message">
                   <img
                     src={`${bucket}/images/big_smile.png`}
                     alt="smiley_face"
-                    loading="lazy"
                   />
                   <h4>
                     Nous sommes faits pour
