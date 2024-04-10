@@ -15,7 +15,7 @@ function MobileHome() {
         <div className="top-media">
           <div className="header-container">
             <img
-              src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/gif/mobile_home.gif"
+              src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/home/playtime_home.webp"
               alt=""
             />
           </div>
