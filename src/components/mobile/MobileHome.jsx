@@ -4,11 +4,11 @@ import workData from "../../data/workData";
 import MobileNavbar from "./MobileNavbar";
 
 function MobileHome() {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(null);
   const tabToggle = (index) => {
     setActiveTab(index === activeTab ? null : index);
   };
-  console.log(workData);
+  const activeIndex = workData.indexOf(activeTab);
 
   return (
     <>
@@ -17,7 +17,7 @@ function MobileHome() {
         <div className="top-media">
           <div className="header-container">
             <img
-              src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/home/playtime_home.webp"
+              src={activeTab === null ? workData[0].images[0] : workData[activeIndex].images[0] }
               alt=""
             />
           </div>
