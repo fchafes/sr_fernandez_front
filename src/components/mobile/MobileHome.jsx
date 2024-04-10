@@ -12,6 +12,10 @@ function MobileHome() {
   return (
     <>
       <div className="m-home-container">
+        <nav className="mobile-navbar">
+          <h1>Sr Fernandez</h1>
+          <p>Menu</p>
+        </nav>
         <div className="top-media">
           <div className="header-container">
             <img
@@ -20,7 +24,6 @@ function MobileHome() {
             />
           </div>
         </div>
-
         <div className="bottom-media">
           <div className="accordion">
             {workData.map((index) => {
