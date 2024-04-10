@@ -13,54 +13,59 @@
 }
 
 .m-home-container .bottom-media {
-  background-color: rgb(163, 242, 88);
   width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
 .m-home-container .bottom-media .accordion {
-  background-color: blue;
   flex: 1;
 }
 
-.m-home-container .bottom-media .accordion .tab {
-  background-color: rgb(255, 255, 255);
-  border-top: 1px solid #000;
+.m-home-container .bottom-media .accordion .tab-container {
+  height: 50px;
+  transition: height 0.3s ease;
+}
+
+.m-home-container .bottom-media .accordion .tab-container .tab {
   height: 70px;
   display: flex;
 }
 
-.m-home-container .bottom-media .accordion .tab .tab-left {
-  background-color: black;
+.m-home-container .bottom-media .accordion .tab-container .tab .tab-left {
   height: 100%;
   width: 25%;
+  border-top: 1px solid #000;
 }
 
-.m-home-container .bottom-media .accordion .tab .tab-left img {
+.m-home-container .bottom-media .accordion .tab-container .tab .tab-left img {
   object-fit: cover;
   height: 100%;
   width: 100%;
   border-right: 1px solid #000;
 }
 
-.m-home-container .bottom-media .accordion .tab .tab-right {
-  background-color: rgb(133, 86, 86);
+.m-home-container .bottom-media .accordion .tab-container .tab .tab-right {
+  background-color: rgb(255, 255, 255);
   height: 100%;
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 1em;
+  border-top: 1px solid #000;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in;
 }
 
-.m-home-container .bottom-media .accordion .tab .tab-right h3 {
+.m-home-container .bottom-media .accordion .tab-container .tab .tab-right h3 {
   font-family: "plaak43-bold";
   font-size: 5em;
   margin-bottom: 5px;
+  white-space: nowrap;
 }
 
-.m-home-container .bottom-media .m-home-footer {
+.m-home-container .m-home-footer {
   background-color: aqua;
   height: 70px;
   border-top: 1px solid #000;
