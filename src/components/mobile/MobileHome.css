@@ -6,10 +6,21 @@
 }
 
 .m-home-container .top-media {
-  background-color: antiquewhite;
-  flex: 1;
+  background-color: rgb(109, 68, 15);
+  /* flex: 1; */
+  width: 100%;
+  /* height: 100%; */
+}
+
+.m-home-container .top-media .header-container {
   width: 100%;
   height: 100%;
+}
+
+.m-home-container .top-media .header-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .m-home-container .bottom-media {
@@ -24,7 +35,7 @@
 
 .m-home-container .bottom-media .accordion .tab-container {
   height: 50px;
-  transition: height 0.3s ease;
+  transition: height 0.2s ease;
 }
 
 .m-home-container .bottom-media .accordion .tab-container .tab {
@@ -55,7 +66,7 @@
   padding-left: 1em;
   border-top: 1px solid #000;
   overflow: hidden;
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .m-home-container .bottom-media .accordion .tab-container .tab .tab-right h3 {

@@ -12,7 +12,11 @@ function MobileHome() {
   return (
     <>
       <div className="m-home-container">
-        <div className="top-media"></div>
+        <div className="top-media">
+          <div className="header-container">
+            <img src="src/assets/mobile_home.gif" alt="" />
+          </div>
+        </div>
 
         <div className="bottom-media">
           <div className="accordion">
