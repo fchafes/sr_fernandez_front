@@ -16,7 +16,7 @@
 
 .m-home-container .mobile-navbar h1 {
   font-family: "rza-bold";
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #fff;
   mix-blend-mode: difference;
 }
@@ -49,6 +49,7 @@
   height: 60%;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 .m-home-container .bottom-media .accordion {
