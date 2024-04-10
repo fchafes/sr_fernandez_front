@@ -1,6 +1,7 @@
 import "./MobileHome.css";
 import { useState } from "react";
 import workData from "../../data/workData";
+import MobileNavbar from "./MobileNavbar";
 
 function MobileHome() {
   const [activeTab, setActiveTab] = useState(0);
@@ -11,11 +12,8 @@ function MobileHome() {
 
   return (
     <>
+      <MobileNavbar />
       <div className="m-home-container">
-        <nav className="mobile-navbar">
-          <h1>Sr Fernandez</h1>
-          <p>Menu</p>
-        </nav>
         <div className="top-media">
           <div className="header-container">
             <img

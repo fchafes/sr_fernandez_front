@@ -5,30 +5,7 @@
   flex-direction: column;
 }
 
-.m-home-container .mobile-navbar {
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.8em;
-}
-
-.m-home-container .mobile-navbar h1 {
-  font-family: "rza-bold";
-  font-size: 1.2em;
-  color: #fff;
-  mix-blend-mode: difference;
-}
-
-.m-home-container .mobile-navbar p {
-  font-size: 1.5em;
-  color: #fff;
-  mix-blend-mode: difference;
-}
-
 .m-home-container .top-media {
-  /* flex: 1; */
   width: 100%;
   height: 40%;
 }
