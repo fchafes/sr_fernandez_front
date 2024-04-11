@@ -77,7 +77,11 @@
 }
 
 .m-home-container .bottom-media .m-home-footer {
-  background-color: aqua;
-  height: 70px;
+  width: 100%;
   border-top: 1px solid #000;
+}
+
+.m-home-container .bottom-media .m-home-footer .footy {
+  height: 50px;
+  background-color: rgb(0, 0, 0);
 }

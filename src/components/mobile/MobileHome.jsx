@@ -51,7 +51,12 @@ function MobileHome() {
               );
             })}
           </div>
-          <div className="m-home-footer">footer</div>
+          <div className="m-home-footer">
+            
+            <div className="footy"></div>
+
+
+          </div>
         </div>
       </div>
     </>
