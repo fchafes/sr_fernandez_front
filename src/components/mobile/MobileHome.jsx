@@ -2,6 +2,7 @@ import "./MobileHome.css";
 import { useState } from "react";
 import workData from "../../data/workData";
 import MobileNavbar from "./MobileNavbar";
+import MobileFooter from "./MobileFooter";
 
 function MobileHome() {
   const [activeTab, setActiveTab] = useState(null);
@@ -51,12 +52,7 @@ function MobileHome() {
               );
             })}
           </div>
-          <div className="m-home-footer">
-            
-            <div className="footy"></div>
-
-
-          </div>
+          <MobileFooter/>
         </div>
       </div>
     </>
