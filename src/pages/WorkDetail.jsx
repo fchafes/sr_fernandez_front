@@ -49,7 +49,6 @@ function WorkDetail() {
 
   return (
     <>
-      <div className="prueba-sticky">
         <NavbarDetail
           handleGlitch={handleGlitch}
           handleContactGlitch={handleContactGlitch}
@@ -88,7 +87,6 @@ function WorkDetail() {
             ))}
           </div>
         </div>
-      </div>
     </>
   );
 }
