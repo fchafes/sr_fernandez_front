@@ -1,7 +1,11 @@
+/* body {
+  position: relative;
+} */
+
 .work-container {
   display: flex;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
 
 .work-container .text-container {
