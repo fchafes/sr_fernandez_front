@@ -49,42 +49,44 @@ function WorkDetail() {
 
   return (
     <>
-      <NavbarDetail
-        handleGlitch={handleGlitch}
-        handleContactGlitch={handleContactGlitch}
-      />
-      <MobileNavbar />
-      {showGlitch && (
-        <img src={`${bucket}/gif/glitch_03.gif`} className="glitch" />
-      )}
-      {showGlitch2 && (
-        <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
-      )}
+      <div className="prueba-sticky">
+        <NavbarDetail
+          handleGlitch={handleGlitch}
+          handleContactGlitch={handleContactGlitch}
+        />
+        <MobileNavbar />
+        {showGlitch && (
+          <img src={`${bucket}/gif/glitch_03.gif`} className="glitch" />
+        )}
+        {showGlitch2 && (
+          <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
+        )}
 
-      <div className="work-container">
-        <div className="text-container">
-          <Link
-            to="#"
-            onClick={handleGlitch2}
-            onMouseEnter={() => dispatch(toggleVisible())}
-            onMouseLeave={() => dispatch(toggleVisible())}
-          >
-            Sr. Fernandez
-          </Link>
-          <h1>{work.title}</h1>
-          {paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-        <div className="img-container">
-          {work.images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Image ${index + 1}`}
-              loading="lazy"
-            />
-          ))}
+        <div className="work-container">
+          <div className="text-container">
+            <Link
+              to="#"
+              onClick={handleGlitch2}
+              onMouseEnter={() => dispatch(toggleVisible())}
+              onMouseLeave={() => dispatch(toggleVisible())}
+            >
+              Sr. Fernandez
+            </Link>
+            <h1>{work.title}</h1>
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+          <div className="img-container">
+            {work.images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`Image ${index + 1}`}
+                loading="lazy"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>
