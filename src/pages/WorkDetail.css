@@ -61,12 +61,15 @@
 @media screen and (max-width: 768px) {
   .work-container {
     flex-direction: column;
+    height: auto !important;
+    overflow: visible !important;
   }
   .work-container .text-container {
     width: 100vw;
   }
   .work-container .img-container {
     width: 100vw;
-    overflow: scroll;
+    /* height: 1000px; */
+    overflow: visible !important;
   }
 }
