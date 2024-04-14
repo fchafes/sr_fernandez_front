@@ -5,20 +5,19 @@
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
-  z-index: 1000;
 }
 
 .mobile-navbar h1 {
   font-family: "rza-bold";
   font-size: 1.2em;
   color: #fff;
-  mix-blend-mode: difference !important;
+  mix-blend-mode: difference;
 }
 
 .mobile-navbar p {
   font-size: 1.2em;
   color: #fff;
-  mix-blend-mode: difference !important;
+  mix-blend-mode: difference;
 }
 
 @media screen and (min-width: 768px) {
