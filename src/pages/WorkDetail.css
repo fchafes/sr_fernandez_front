@@ -66,10 +66,10 @@
   }
   .work-container .text-container {
     width: 100vw;
+    padding: 1em 1.5em;
   }
   .work-container .img-container {
     width: 100vw;
-    /* height: 1000px; */
     overflow: visible !important;
   }
 }
