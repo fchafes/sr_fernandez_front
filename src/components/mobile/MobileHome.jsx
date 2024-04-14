@@ -41,7 +41,7 @@ function MobileHome() {
                       className="tab-right"
                       style={{
                         backgroundColor: `${
-                          activeTab === index ? "yellow" : ""
+                          activeTab === index ? "#efff55" : ""
                         }`,
                       }}
                     >
