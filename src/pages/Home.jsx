@@ -11,9 +11,6 @@ import { useDispatch } from "react-redux";
 import { togglePointer } from "../redux/cursorReducer";
 import { toggleVisible } from "../redux/cursorReducer";
 
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-
 function Home() {
   const dispatch = useDispatch();
   const bucket =
