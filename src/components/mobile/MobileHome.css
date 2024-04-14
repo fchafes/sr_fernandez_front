@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+
+.prueba-sticky {
+  position: relative;
+}
+
+
 .m-home-container .top-media {
   width: 100%;
   height: 40%;

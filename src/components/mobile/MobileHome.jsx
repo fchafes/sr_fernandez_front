@@ -13,6 +13,7 @@ function MobileHome() {
 
   return (
     <>
+    <div className="prueba-sticky">
       <MobileNavbar />
       <div className="m-home-container">
         <div className="top-media">
@@ -55,6 +56,7 @@ function MobileHome() {
           <MobileFooter/>
         </div>
       </div>
+    </div>
     </>
   );
 }
