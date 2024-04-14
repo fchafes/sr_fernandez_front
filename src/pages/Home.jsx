@@ -390,11 +390,11 @@ function Home() {
             </div>
             <div className="big-about behind">
               <h3>AB</h3>
-              <img src={`${bucket}/gif/about.gif`} alt="" loading="lazy" />
+              <img src={`${bucket}/gif/about.gif`} alt="" />
             </div>
             <div className="big-about behind">
               <h3>ABOO</h3>
-              <img src={`${bucket}/gif/about_2.gif`} alt="" loading="lazy" />
+              <img src={`${bucket}/gif/about_2.gif`} alt="" />
             </div>
             <div className="sticker-container">
               <div className="sticker-container-relative">

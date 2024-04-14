@@ -21,7 +21,7 @@
 
 .work-container .text-container h1 {
   font-size: 3em;
-  color: #EFFF55;
+  color: #efff55;
   margin-top: 0.8em;
 }
 
@@ -48,13 +48,25 @@
   width: 100%;
 }
 
-
 /* ------ RESPONSIVE STYLE - WIDE SCREENS ------ */
 
 @media screen and (min-width: 1440px) {
-
   .work-container .img-container {
     width: 95%;
   }
+}
 
+/* ------ RESPONSIVE STYLE - MOBILE ------ */
+
+@media screen and (max-width: 768px) {
+  .work-container {
+    flex-direction: column;
+  }
+  .work-container .text-container {
+    width: 100vw;
+  }
+  .work-container .img-container {
+    width: 100vw;
+    overflow: scroll;
+  }
 }
