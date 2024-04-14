@@ -1,7 +1,7 @@
 .mobile-navbar {
   height: 50px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
