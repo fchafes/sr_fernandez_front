@@ -5,7 +5,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect, Suspense, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { toggleVisible } from "../redux/cursorReducer";
-import MobileNavbar from "../components/mobile/MobileNavbar"
+import MobileNavbar from "../components/mobile/MobileNavbar";
 
 function WorkDetail() {
   const dispatch = useDispatch();
@@ -53,7 +53,6 @@ function WorkDetail() {
         handleGlitch={handleGlitch}
         handleContactGlitch={handleContactGlitch}
       />
-      <MobileNavbar/>
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_03.gif`} className="glitch" />
       )}
@@ -62,6 +61,7 @@ function WorkDetail() {
       )}
 
       <div className="work-container">
+        <MobileNavbar />
         <div className="text-container">
           <Link
             to="#"
