@@ -1,5 +1,5 @@
 .mobile-navbar {
-  top: 1px;
+  top: 0;
   left: 0;
   height: 50px;
   width: 100%;
@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
-  background-color: azure;
 }
 
 .mobile-navbar h1 {

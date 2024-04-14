@@ -1,21 +1,7 @@
-/* body {
-  position: relative;
-} */
-
 .work-container {
   display: flex;
   height: 100vh;
-  /* position: relative; */
 }
-
-
-
-.prueba-sticky {
-  position: relative;
-}
-
-
-
 
 .work-container .text-container {
   width: 30%;
