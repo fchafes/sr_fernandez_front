@@ -28,13 +28,12 @@
   width: 100vw;
   background-color: #000000;
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .open-menu ul {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .open-menu ul li {
@@ -43,6 +42,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  padding-bottom: 9px;
+  background-color: #000;
+}
+
+.open-menu ul li:active {
+  background-color: #efff22;
+  border-top: 0.5px solid #efff22;
+}
+
+.open-menu ul li:active a {
+  color: #000;
 }
 
 .open-menu ul li:last-child {
@@ -53,15 +64,21 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'plaak43-bold';
+  font-family: "plaak43-bold";
   font-size: 8em;
-  margin-bottom: 9px;
 }
 
 .open-menu .mobile-menu-footer {
-  background-color: rgb(6, 224, 151);
-  height: 200px;
-  width: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5em;
+}
+
+.open-menu .mobile-menu-footer img {
+  width: 90px;
 }
 
 @media screen and (min-width: 768px) {

@@ -26,7 +26,11 @@ function MobileNavbar({ handleGlitch }) {
             <Link>contact</Link>
           </li>
         </ul>
-        <div className="mobile-menu-footer">sooooooooooy footer</div>
+        <div className="mobile-menu-footer">
+          <Link>
+            <img src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr_iso_white.png" alt="isologo_elephant" />
+          </Link>
+        </div>
       </div>
     </>
   );
