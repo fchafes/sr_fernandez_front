@@ -52,3 +52,9 @@
 .sticky-container-detail .menu ul :nth-child(4) {
   padding-bottom: 3px;
 }
+
+@media screen and (max-width: 768px) {
+  .sticky-container-detail {
+    display: none;
+  }
+}

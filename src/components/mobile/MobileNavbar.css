@@ -19,3 +19,9 @@
   color: #fff;
   mix-blend-mode: difference;
 }
+
+@media screen and (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
