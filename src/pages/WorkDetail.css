@@ -1,6 +1,7 @@
 .work-container {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 
 .work-container .text-container {
