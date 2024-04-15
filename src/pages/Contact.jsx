@@ -13,11 +13,19 @@ function Contact() {
     "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const navigate = useNavigate();
   const [showGlitch, setShowGlitch] = useState(false);
+  const [showGlitch2, setShowGlitch2] = useState(false);
   const handleGlitch = () => {
     setShowGlitch(true);
     setTimeout(() => {
       setShowGlitch(false);
       navigate("/");
+    }, 400);
+  };
+  const handleContactGlitch = () => {
+    setShowGlitch2(true);
+    setTimeout(() => {
+      setShowGlitch2(false);
+      navigate("/contact");
     }, 400);
   };
   useEffect(() => {
@@ -29,10 +37,16 @@ function Contact() {
   return (
     <>
       <NavbarContact handleGlitch={handleGlitch} />
-      <MobileNavbar />
+      <MobileNavbar
+        handleGlitch={handleGlitch}
+        handleContactGlitch={handleContactGlitch}
+      />
       <MadeIn />
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_02.gif`} className="glitch" />
+      )}
+      {showGlitch2 && (
+        <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
       )}
 
       <div className="contact-page-container">

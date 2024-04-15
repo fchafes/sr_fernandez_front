@@ -2,7 +2,7 @@ import "./WorkDetail.css";
 import NavbarDetail from "../components/NavbarDetail";
 import workData from "../data/workData";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect, Suspense, lazy } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleVisible } from "../redux/cursorReducer";
 import MobileNavbar from "../components/mobile/MobileNavbar";
