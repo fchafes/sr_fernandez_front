@@ -27,24 +27,27 @@
   height: 100vh;
   width: 100vw;
   background-color: #000000;
-  padding-top: 100px;
+  padding-top: 4em;
   display: flex;
   flex-direction: column;
 }
 
 .open-menu ul {
-  height: 100%;
+  height: 60%;
+  background-color: #efff22;
+  /* border: 10px solid blue; */
 }
 
 .open-menu ul li {
   border-top: 0.5px solid white;
-  height: 25%;
+  height: 33.33%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   padding-bottom: 9px;
   background-color: #000;
+  font-size: 18vh;
 }
 
 .open-menu ul li:active {
@@ -65,7 +68,6 @@
   text-transform: uppercase;
   color: #fff;
   font-family: "plaak43-bold";
-  font-size: 8em;
 }
 
 .open-menu .mobile-menu-footer {
@@ -74,11 +76,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
 }
 
 .open-menu .mobile-menu-footer img {
-  width: 90px;
+  width: 20vw;
+  max-width: 90px;
 }
 
 @media screen and (min-width: 768px) {
