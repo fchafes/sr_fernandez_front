@@ -1,6 +1,7 @@
 .m-about-container {
   background-color: #000;
   width: 100vw;
+  padding-top: 4em;
 }
 
 .m-about-container .m-big-about {
@@ -9,10 +10,11 @@
   align-items: center;
 }
 
-.m-about-container .m-big-about h4 {
+.m-about-container .m-big-about h4,
+.m-about-container .m-big-about-behind h4 {
   color: #fff;
   font-family: "plaak43-bold";
-  font-size: 50em;
+  font-size: 48em;
   line-height: 0.85em;
   margin-top: -80px;
 }
