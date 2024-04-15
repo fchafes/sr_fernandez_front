@@ -1,12 +1,17 @@
 import "./MobileHome.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import workData from "../../data/workData";
 import MobileNavbar from "./MobileNavbar";
 import MobileFooter from "./MobileFooter";
 
 function MobileHome() {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState(null);
   const tabToggle = (index) => {
+    if (index === activeTab) {
+      navigate(`/${workData[activeIndex].url}`);
+    }
     setActiveTab(index === activeTab ? null : index);
   };
   const activeIndex = workData.indexOf(activeTab);
@@ -18,7 +23,11 @@ function MobileHome() {
         <div className="top-media">
           <div className="header-container">
             <img
-              src={activeTab === null ? workData[0].images[0] : workData[activeIndex].images[0] }
+              src={
+                activeTab === null
+                  ? workData[0].images[0]
+                  : workData[activeIndex].images[0]
+              }
               alt=""
             />
           </div>
@@ -52,7 +61,7 @@ function MobileHome() {
               );
             })}
           </div>
-          <MobileFooter/>
+          <MobileFooter />
         </div>
       </div>
     </>
