@@ -7,13 +7,13 @@
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
-  padding-top: 0.6em;
+  padding-top: 0.7em;
   z-index: 1000;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.5046612394957983) 0%,
-    rgba(0, 0, 0, 0.5046612394957983) 70%,
+    rgba(0, 0, 0, 0.5046612394957983) 90%,
     rgba(0, 0, 0, 0) 100%
   );
 }
