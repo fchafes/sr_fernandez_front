@@ -58,11 +58,11 @@
 }
 
 .m-home-container .bottom-media .accordion .tab-container:first-child .tab .tab-left {
-  border-top: 0px solid #000000;
+  border-top: 0.5px solid #000000;
 }
 
 .m-home-container .bottom-media .accordion .tab-container:first-child .tab .tab-right {
-  border-top: 0px solid #000000;
+  border-top: 0.5px solid #000000;
 }
 
 .m-home-container .bottom-media .accordion .tab-container .tab .tab-right {
