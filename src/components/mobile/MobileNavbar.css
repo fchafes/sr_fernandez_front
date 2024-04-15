@@ -30,12 +30,12 @@
   padding-top: 4em;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .open-menu ul {
   height: 60%;
   background-color: #efff22;
-  /* border: 10px solid blue; */
 }
 
 .open-menu ul li {
