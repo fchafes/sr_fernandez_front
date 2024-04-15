@@ -23,6 +23,13 @@ function MobileAbout() {
           <h4>B</h4>
           <img src={`${bucket}/gif/about.gif`} alt="" />
         </div>
+        <div className="m-big-about-behind">
+          <h4>A</h4>
+          <h4>B</h4>
+          <h4>O</h4>
+          <h4>O</h4>
+          <img src={`${bucket}/gif/about_2.gif`} alt="" />
+        </div>
       </div>
     </>
   );
