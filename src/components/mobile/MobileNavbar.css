@@ -18,10 +18,44 @@
   text-decoration: none;
 }
 
-.mobile-navbar p {
+/* .mobile-navbar p {
   font-size: 1.2em;
   color: #fff;
   mix-blend-mode: difference;
+} */
+
+.mobile-navbar .menu-button {
+  height: 22px;
+  width: 22px;
+  position: relative;
+}
+
+.mobile-navbar .menu-button .line-1 {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20%;
+}
+
+.mobile-navbar .menu-button .line-2 {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 20%;
+}
+
+.mobile-navbar .menu-button .line-1-x {
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: 47%;
+}
+
+.mobile-navbar .menu-button .line-2-x {
+  transform: rotate(-45deg);
+  transform-origin: center;
+  bottom: 45%;
 }
 
 .open-menu {
