@@ -2,7 +2,7 @@ import "./MobileHome.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import workData from "../../data/workData";
-import MobileNavbar from "./MobileNavbar";
+import MobileHomeNavbar from "./MobileHomeNavbar";
 import MobileFooter from "./MobileFooter";
 
 function MobileHome() {
@@ -10,6 +10,7 @@ function MobileHome() {
   const [activeTab, setActiveTab] = useState(null);
   const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch2, setShowGlitch2] = useState(false);
+  const [showGlitch3, setShowGlitch3] = useState(false);
   const tabToggle = (index) => {
     if (index === activeTab) {
       navigate(`/${workData[activeIndex].url}`);
@@ -33,6 +34,13 @@ function MobileHome() {
       navigate("/contact");
     }, 400);
   };
+  const handleAboutGlitch = () => {
+    setShowGlitch3(true);
+    setTimeout(() => {
+      setShowGlitch3(false);
+      navigate("/about");
+    }, 400);
+  };
 
   return (
     <>
@@ -42,17 +50,29 @@ function MobileHome() {
       {showGlitch2 && (
         <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
       )}
-      <MobileNavbar
+      {showGlitch3 && (
+        <img src={`${bucket}/gif/glitch_02.gif`} className="glitch" />
+      )}
+      <MobileHomeNavbar
         handleGlitch={handleGlitch}
         handleContactGlitch={handleContactGlitch}
+        handleAboutGlitch={handleAboutGlitch}
       />
       <div className="m-home-container">
         <div className="top-media">
           <div className="header-container">
-            <img
+            {/* <img
               src={
                 activeTab === null
                   ? workData[0].images[0]
+                  : workData[activeIndex].images[0]
+              }
+              alt=""
+            /> */}
+            <img
+              src={
+                activeTab === null
+                  ? `${bucket}/mobile/gif/home_header.gif`
                   : workData[activeIndex].images[0]
               }
               alt=""

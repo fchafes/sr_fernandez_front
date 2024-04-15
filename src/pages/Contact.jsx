@@ -14,6 +14,7 @@ function Contact() {
   const navigate = useNavigate();
   const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch2, setShowGlitch2] = useState(false);
+  const [showGlitch3, setShowGlitch3] = useState(false);
   const handleGlitch = () => {
     setShowGlitch(true);
     setTimeout(() => {
@@ -28,6 +29,13 @@ function Contact() {
       navigate("/contact");
     }, 400);
   };
+  const handleAboutGlitch = () => {
+    setShowGlitch3(true);
+    setTimeout(() => {
+      setShowGlitch3(false);
+      navigate("/about");
+    }, 400);
+  };
   useEffect(() => {
     const preloadGlitch_02 = new Image();
     preloadGlitch_02.src = `${bucket}/gif/glitch_02.gif`;
@@ -40,6 +48,7 @@ function Contact() {
       <MobileNavbar
         handleGlitch={handleGlitch}
         handleContactGlitch={handleContactGlitch}
+        handleAboutGlitch={handleAboutGlitch}
       />
       <MadeIn />
       {showGlitch && (
@@ -47,6 +56,9 @@ function Contact() {
       )}
       {showGlitch2 && (
         <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
+      )}
+      {showGlitch3 && (
+        <img src={`${bucket}/gif/glitch_01.gif`} className="glitch" />
       )}
 
       <div className="contact-page-container">

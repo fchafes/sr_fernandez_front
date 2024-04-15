@@ -47,7 +47,7 @@
   line-height: 1;
 }
 
-/* ------ RESPONSIVE STYLE ------ */
+/* ------ RESPONSIVE STYLE - WIDE SCREENS------ */
 
 @media screen and (min-width: 1440px) {
   .sticky-note.first {
@@ -58,4 +58,40 @@
   .sticky-note.visible-1 {
     bottom: 170px;
   }
+}
+
+
+/* ------ RESPONSIVE STYLE - MOBILE SCREENS------ */
+
+.sticky-note.first-mobile {
+  width: 200px;
+  top: 1700px;
+  right: 10px;
+}
+
+.sticky-note.visible-1-mobile {
+  opacity: 1;
+  top: 1670px;
+}
+
+.sticky-note.second-mobile {
+  width: 240px;
+  top: 2000px;
+  left: 30px;
+}
+
+.sticky-note.visible-2-mobile {
+  opacity: 1;
+  top: 2030px;
+}
+
+.sticky-note.third-mobile {
+  width: 200px;
+  top: 2500px;
+  right: 10px;
+}
+
+.sticky-note.visible-3-mobile {
+  opacity: 1;
+  top: 2530px;
 }

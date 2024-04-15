@@ -1,8 +1,8 @@
-import "./MobileNavbar.css";
+import "./MobileHomeNavbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function MobileNavbar({ handleGlitch, handleContactGlitch, handleAboutGlitch }) {
+function MobileHomeNavbar({ handleGlitch, handleContactGlitch, handleAboutGlitch }) {
   const handleWorks = () => {
     handleGlitch();
   };
@@ -53,4 +53,4 @@ function MobileNavbar({ handleGlitch, handleContactGlitch, handleAboutGlitch }) 
   );
 }
 
-export default MobileNavbar;
+export default MobileHomeNavbar;
