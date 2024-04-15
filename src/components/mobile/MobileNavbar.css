@@ -64,10 +64,6 @@
   color: #000;
 }
 
-.open-menu ul li:last-child {
-  border-bottom: 0.3px solid #fff;
-}
-
 .open-menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -75,19 +71,15 @@
   font-family: "plaak43-bold";
 }
 
-.open-menu .mobile-menu-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1em;
-}
-
-.open-menu .mobile-menu-footer img {
+.open-menu ul li:last-child img {
   width: 20vw;
   max-width: 90px;
   z-index: 1000;
+}
+
+.open-menu ul li:last-child:active {
+  background-color: #000000;
+  border-top: 0.5px solid #ffffff;
 }
 
 @media screen and (min-width: 768px) {

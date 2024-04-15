@@ -30,15 +30,15 @@ function MobileNavbar({ handleGlitch }) {
           <li>
             <Link>contact</Link>
           </li>
-        </ul>
-        <div className="mobile-menu-footer">
+          <li>
           <Link>
             <img
               src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr_iso_white.png"
               alt="isologo_elephant"
             />
           </Link>
-        </div>
+          </li>
+        </ul>
       </div>
     </>
   );
