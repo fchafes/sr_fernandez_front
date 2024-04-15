@@ -46,3 +46,18 @@
     transform: rotate(360deg);
   }
 }
+
+/* ------ RESPONSIVE STYLE - MOBILE ------ */
+
+@media screen and (max-width: 768px) {
+  .contact-page-container .contact-box {
+    margin-left: 0.8em;
+    padding-top: 3em;
+  }
+  .contact-page-container .contact-box .link-box a {
+    font-size: 1.5em;
+  }
+  .contact-page-container .contact-box .link-box .contact-smile {
+    width: 60px;
+  }
+}

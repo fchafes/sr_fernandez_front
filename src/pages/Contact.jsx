@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleVisible } from "../redux/cursorReducer";
 import MadeIn from "../components/MadeIn";
+import MobileNavbar from "../components/mobile/MobileNavbar";
 
 function Contact() {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function Contact() {
   return (
     <>
       <NavbarContact handleGlitch={handleGlitch} />
+      <MobileNavbar />
       <MadeIn />
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_02.gif`} className="glitch" />
