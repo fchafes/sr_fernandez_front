@@ -2,9 +2,12 @@ import "./MobileNavbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function MobileNavbar({ handleGlitch }) {
+function MobileNavbar({ handleGlitch, handleContactGlitch }) {
   const handleWorks = () => {
     handleGlitch();
+  };
+  const handleContact = () => {
+    handleContactGlitch();
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {
@@ -24,13 +27,13 @@ function MobileNavbar({ handleGlitch }) {
       </nav>
       <div className={`open-menu ${isMenuOpen ? "show-open-menu" : ""}`}>
         <ul>
-          <li>
-            <Link onMouseUp={handleWorks}>works</Link>
+          <li onMouseUp={handleWorks}>
+            <Link>works</Link>
           </li>
           <li>
             <Link>about</Link>
           </li>
-          <li>
+          <li onMouseUp={handleContact}>
             <Link>contact</Link>
           </li>
           <li>

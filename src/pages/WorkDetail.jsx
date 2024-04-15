@@ -53,7 +53,10 @@ function WorkDetail() {
         handleGlitch={handleGlitch}
         handleContactGlitch={handleContactGlitch}
       />
-      <MobileNavbar handleGlitch={handleGlitch} />
+      <MobileNavbar
+        handleGlitch={handleGlitch}
+        handleContactGlitch={handleContactGlitch}
+      />
       {showGlitch && (
         <img src={`${bucket}/gif/glitch_03.gif`} className="glitch" />
       )}
