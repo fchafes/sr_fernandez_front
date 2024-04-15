@@ -10,6 +10,14 @@
   align-items: center;
 }
 
+.m-about-container .m-big-about-behind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 0;
+}
+
 .m-about-container .m-big-about h4,
 .m-about-container .m-big-about-behind h4 {
   color: #fff;
