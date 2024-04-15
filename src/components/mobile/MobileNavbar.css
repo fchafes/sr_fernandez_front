@@ -29,9 +29,13 @@
   width: 100vw;
   background-color: #000000;
   padding-top: 4em;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
+}
+
+.show-open-menu {
+  display: flex;
 }
 
 .open-menu ul {
