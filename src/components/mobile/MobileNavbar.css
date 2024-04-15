@@ -3,7 +3,7 @@
   left: 0;
   height: 50px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
@@ -29,7 +29,8 @@
   width: 100vw;
   background-color: #000000;
   padding-top: 4em;
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   position: fixed;
 }
@@ -83,6 +84,7 @@
 .open-menu .mobile-menu-footer img {
   width: 20vw;
   max-width: 90px;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 768px) {
