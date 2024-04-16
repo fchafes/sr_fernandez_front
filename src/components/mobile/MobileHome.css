@@ -57,11 +57,21 @@
   border-right: 1px solid #000;
 }
 
-.m-home-container .bottom-media .accordion .tab-container:first-child .tab .tab-left {
+.m-home-container
+  .bottom-media
+  .accordion
+  .tab-container:first-child
+  .tab
+  .tab-left {
   border-top: 0.5px solid #000000;
 }
 
-.m-home-container .bottom-media .accordion .tab-container:first-child .tab .tab-right {
+.m-home-container
+  .bottom-media
+  .accordion
+  .tab-container:first-child
+  .tab
+  .tab-right {
   border-top: 0.5px solid #000000;
 }
 

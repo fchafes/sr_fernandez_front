@@ -2,15 +2,39 @@ import "./MobileHomeNavbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function MobileHomeNavbar({ handleGlitch, handleContactGlitch, handleAboutGlitch }) {
+function MobileHomeNavbar({
+  handleGlitch,
+  handleContactGlitch,
+  handleAboutGlitch,
+  location,
+}) {
+  const handleLogo = () => {
+    if (location.pathname === "/" && isMenuOpen) {
+      handleMenu();
+    } else {
+      handleGlitch();
+    }
+  };
   const handleWorks = () => {
-    handleGlitch();
+    if (location.pathname === "/") {
+      handleMenu();
+    } else {
+      handleGlitch();
+    }
   };
   const handleContact = () => {
-    handleContactGlitch();
+    if (location.pathname === "/contact") {
+      handleMenu();
+    } else {
+      handleContactGlitch();
+    }
   };
   const handleAbout = () => {
-    handleAboutGlitch();
+    if (location.pathname === "/about") {
+      handleMenu();
+    } else {
+      handleAboutGlitch();
+    }
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {
@@ -20,7 +44,7 @@ function MobileHomeNavbar({ handleGlitch, handleContactGlitch, handleAboutGlitch
   return (
     <>
       <nav className="mobile-navbar">
-        <Link to="#" className="mobile-navbar-logo" onClick={handleWorks}>
+        <Link to="#" className="mobile-navbar-logo" onClick={handleLogo}>
           Sr. Fernandez
         </Link>
         <div onClick={handleMenu} className="menu-button">

@@ -2,15 +2,32 @@ import "./MobileNavbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function MobileNavbar({ handleGlitch, handleContactGlitch, handleAboutGlitch }) {
+function MobileNavbar({
+  handleGlitch,
+  handleContactGlitch,
+  handleAboutGlitch,
+  location,
+}) {
   const handleWorks = () => {
-    handleGlitch();
+    if (location.pathname === "/") {
+      handleMenu();
+    } else {
+      handleGlitch();
+    }
   };
   const handleContact = () => {
-    handleContactGlitch();
+    if (location.pathname === "/contact") {
+      handleMenu();
+    } else {
+      handleContactGlitch();
+    }
   };
   const handleAbout = () => {
-    handleAboutGlitch();
+    if (location.pathname === "/about") {
+      handleMenu();
+    } else {
+      handleAboutGlitch();
+    }
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {

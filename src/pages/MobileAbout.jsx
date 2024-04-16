@@ -3,16 +3,16 @@ import MobileNavbar from "../components/mobile/MobileNavbar";
 import StickyNote from "../components/StickyNote";
 import stickyNotesData from "../data/stickyNotesData";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function MobileAbout() {
+  let location = useLocation();
   const navigate = useNavigate();
   const stickyText = stickyNotesData;
   const bucket =
     "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch2, setShowGlitch2] = useState(false);
-  const [showGlitch3, setShowGlitch3] = useState(false);
   const handleGlitch = () => {
     setShowGlitch(true);
     setTimeout(() => {
@@ -27,29 +27,25 @@ function MobileAbout() {
       navigate("/contact");
     }, 400);
   };
-  const handleAboutGlitch = () => {
-    setShowGlitch3(true);
-    setTimeout(() => {
-      setShowGlitch3(false);
-      navigate("/about");
-    }, 400);
-  };
 
   return (
     <>
       {showGlitch && (
-        <img src={`${bucket}/gif/glitch_02.gif`} className="glitch" />
+        <img
+          src={`${bucket}/mobile/glitch/glitch_mob_3.gif`}
+          className="glitch"
+        />
       )}
       {showGlitch2 && (
-        <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
-      )}
-      {showGlitch3 && (
-        <img src={`${bucket}/gif/glitch_01.gif`} className="glitch" />
+        <img
+          src={`${bucket}/mobile/glitch/glitch_mob_1.gif`}
+          className="glitch"
+        />
       )}
       <MobileNavbar
+        location={location}
         handleGlitch={handleGlitch}
         handleContactGlitch={handleContactGlitch}
-        handleAboutGlitch={handleAboutGlitch}
       />
       <div className="m-about-container">
         <div className="m-big-about">

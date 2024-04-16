@@ -1,36 +1,34 @@
 import "./MobileHome.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import workData from "../../data/workData";
 import MobileHomeNavbar from "./MobileHomeNavbar";
 import MobileFooter from "./MobileFooter";
 
 function MobileHome() {
+  let location = useLocation();
   const navigate = useNavigate();
+  const isMobile = () => {
+    return window.innerWidth <= 768;
+  };
+  const bucket =
+    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
+
   const [activeTab, setActiveTab] = useState(null);
-  const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch2, setShowGlitch2] = useState(false);
   const [showGlitch3, setShowGlitch3] = useState(false);
+
+  const activeIndex = workData.indexOf(activeTab);
   const tabToggle = (index) => {
     if (index === activeTab) {
       navigate(`/${workData[activeIndex].url}`);
     }
     setActiveTab(index === activeTab ? null : index);
   };
-  const activeIndex = workData.indexOf(activeTab);
-  const bucket =
-    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
-  const handleGlitch = () => {
-    setShowGlitch(true);
-    setTimeout(() => {
-      setShowGlitch(false);
-      navigate("/");
-    }, 400);
-  };
   const handleContactGlitch = () => {
-    setShowGlitch(true);
+    setShowGlitch2(true);
     setTimeout(() => {
-      setShowGlitch(false);
+      setShowGlitch2(false);
       navigate("/contact");
     }, 400);
   };
@@ -44,35 +42,38 @@ function MobileHome() {
 
   return (
     <>
-    {showGlitch && (
-        <img src={`${bucket}/gif/glitch_03.gif`} className="glitch" />
-      )}
       {showGlitch2 && (
-        <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
+        <img
+          src={
+            isMobile()
+              ? `${bucket}/mobile/glitch/glitch_mob_3.gif`
+              : `${bucket}/gif/glitch_03.gif`
+          }
+          className="glitch"
+        />
       )}
       {showGlitch3 && (
-        <img src={`${bucket}/gif/glitch_02.gif`} className="glitch" />
+        <img
+          src={
+            isMobile()
+              ? `${bucket}/mobile/glitch/glitch_mob_1.gif`
+              : `${bucket}/gif/glitch_01.gif`
+          }
+          className="glitch"
+        />
       )}
       <MobileHomeNavbar
-        handleGlitch={handleGlitch}
+        location={location}
         handleContactGlitch={handleContactGlitch}
         handleAboutGlitch={handleAboutGlitch}
       />
       <div className="m-home-container">
         <div className="top-media">
           <div className="header-container">
-            {/* <img
-              src={
-                activeTab === null
-                  ? workData[0].images[0]
-                  : workData[activeIndex].images[0]
-              }
-              alt=""
-            /> */}
             <img
               src={
                 activeTab === null
-                  ? `${bucket}/mobile/gif/home_header.gif`
+                  ? `${bucket}/mobile/gif/m_home_header.gif`
                   : workData[activeIndex].images[0]
               }
               alt=""

@@ -1,13 +1,18 @@
 import "./WorkDetail.css";
 import NavbarDetail from "../components/NavbarDetail";
 import workData from "../data/workData";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleVisible } from "../redux/cursorReducer";
 import MobileNavbar from "../components/mobile/MobileNavbar";
+import MobileFooter from "../components/mobile/MobileFooter";
 
 function WorkDetail() {
+  let location = useLocation();
+  const isMobile = () => {
+    return window.innerWidth <= 768;
+  };
   const dispatch = useDispatch();
   const bucket =
     "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
@@ -18,6 +23,7 @@ function WorkDetail() {
   const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch2, setShowGlitch2] = useState(false);
   const [showGlitch3, setShowGlitch3] = useState(false);
+
   const handleGlitch = () => {
     setShowGlitch(true);
     setTimeout(() => {
@@ -33,16 +39,16 @@ function WorkDetail() {
     }, 400);
   };
   const handleContactGlitch = () => {
-    setShowGlitch(true);
+    setShowGlitch3(true);
     setTimeout(() => {
-      setShowGlitch(false);
+      setShowGlitch3(false);
       navigate("/contact");
     }, 400);
   };
   const handleAboutGlitch = () => {
-    setShowGlitch3(true);
+    setShowGlitch2(true);
     setTimeout(() => {
-      setShowGlitch3(false);
+      setShowGlitch2(false);
       navigate("/about");
     }, 400);
   };
@@ -62,18 +68,40 @@ function WorkDetail() {
         handleContactGlitch={handleContactGlitch}
       />
       <MobileNavbar
+        location={location}
         handleGlitch={handleGlitch}
         handleContactGlitch={handleContactGlitch}
         handleAboutGlitch={handleAboutGlitch}
       />
       {showGlitch && (
-        <img src={`${bucket}/gif/glitch_03.gif`} className="glitch" />
+        <img
+          src={
+            isMobile()
+              ? `${bucket}/mobile/glitch/glitch_mob_1.gif`
+              : `${bucket}/gif/glitch_03.gif`
+          }
+          className="glitch"
+        />
       )}
       {showGlitch2 && (
-        <img src={`${bucket}/gif/glitch_04.gif`} className="glitch" />
+        <img
+          src={
+            isMobile()
+              ? `${bucket}/mobile/glitch/glitch_mob_2.gif`
+              : `${bucket}/gif/glitch_04.gif`
+          }
+          className="glitch"
+        />
       )}
       {showGlitch3 && (
-        <img src={`${bucket}/gif/glitch_02.gif`} className="glitch" />
+        <img
+          src={
+            isMobile()
+              ? `${bucket}/mobile/glitch/glitch_mob_3.gif`
+              : `${bucket}/gif/glitch_02.gif`
+          }
+          className="glitch"
+        />
       )}
 
       <div className="work-container">
@@ -102,6 +130,7 @@ function WorkDetail() {
           ))}
         </div>
       </div>
+      <MobileFooter theme="dark" />
     </>
   );
 }

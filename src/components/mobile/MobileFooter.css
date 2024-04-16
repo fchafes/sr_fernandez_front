@@ -1,19 +1,19 @@
 .m-footer {
   width: 100%;
   border-top: 1px solid #000;
+  padding-bottom: 0.5em;
 }
 
 .m-footer .footy {
   height: 80px;
-  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0.8em 0.8em 0.6em 0.8em;
+  padding: 0.8em 0.8em 0.3em 0.8em;
 }
 
 .m-footer .footy img {
-  width: 60px;
+  width: 80px;
 }
 
 .m-footer .footy .footer-info {
@@ -24,6 +24,11 @@
 }
 
 .m-footer .footy .footer-info a {
-  color: #000;
   text-decoration: none;
+}
+
+.m-footer .footy .footer-info h4 {
+  font-family: "plaak43-bold";
+  font-size: 1.5em;
+  text-align: end;
 }
