@@ -74,7 +74,7 @@ function MobileHome() {
               src={
                 activeTab === null
                   ? `${bucket}/mobile/gif/m_home_header.gif`
-                  : workData[activeIndex].images[0]
+                  : workData[activeIndex].images_mobile[0]
               }
               alt=""
             />
@@ -92,7 +92,7 @@ function MobileHome() {
                 >
                   <div className="tab">
                     <div className="tab-left">
-                      <img src={index.images[0]} alt="" />
+                      <img src={index.img_mini} alt="" />
                     </div>
                     <div
                       className="tab-right"

@@ -120,14 +120,23 @@ function WorkDetail() {
           ))}
         </div>
         <div className="img-container">
-          {work.images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`Image ${index + 1}`}
-              loading="lazy"
-            />
-          ))}
+          {isMobile()
+            ? work.images_mobile.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  loading="lazy"
+                />
+              ))
+            : work.images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  loading="lazy"
+                />
+              ))}
         </div>
       </div>
       <MobileFooter theme="dark" />

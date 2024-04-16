@@ -13,6 +13,14 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_3.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_4.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_4.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/petit_balloon_mini.webp",
   },
   {
     url: "lpb-box-premium",
@@ -29,6 +37,13 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/petit_balloon_b_2.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/petit_balloon_b_3.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/mobile/petit_balloon_b_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/mobile/petit_balloon_b_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon_b/mobile/petit_balloon_b_3.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/petit_balloon_b_mini.webp",
   },
   {
     url: "playtime-paris-ny",
@@ -49,6 +64,18 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_7.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/playtime_8.gif",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_4.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_5.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_6.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_7.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/playtime_paris/mobile/playtime_8.gif",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/playtime_mini.webp",
   },
   {
     url: "paikea",
@@ -67,6 +94,15 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_4.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/paikea_5.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/mobile/paikea_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/mobile/paikea_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/mobile/paikea_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/mobile/paikea_4.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/paikea/mobile/paikea_5.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/paikea_mini.webp",
   },
   {
     url: "aa",
@@ -86,6 +122,17 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_6.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/aa_7.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_4.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_5.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_6.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/aa/mobile/aa_7.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/aa_mini.webp",
   },
   {
     url: "zonza",
@@ -101,6 +148,15 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_4.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/zonza_5.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/mobile/zonza_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/mobile/zonza_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/mobile/zonza_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/mobile/zonza_4.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/zonza/mobile/zonza_5.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/zonza_mini.webp",
   },
   {
     url: "cider",
@@ -118,6 +174,13 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/cider_2.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/cider_3.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/mobile/cider_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/mobile/cider_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/cider/mobile/cider_3.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/cider_mini.webp",
   },
   {
     url: "omy-stick-it",
@@ -135,6 +198,15 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_4.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/omy_stick_5.gif",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/mobile/omy_stick_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/mobile/omy_stick_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/mobile/omy_stick_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/mobile/omy_stick_4.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_stick_it/mobile/omy_stick_5.gif",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/omy_stick_mini.webp",
   },
   {
     url: "omy-3d",
@@ -152,6 +224,15 @@ const workData = [
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_4.webp",
       "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/omy_3d_5.webp",
     ],
+    images_mobile: [
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/mobile/omy_3d_1.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/mobile/omy_3d_2.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/mobile/omy_3d_3.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/mobile/omy_3d_4.webp",
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/omy_3d/mobile/omy_3d_5.webp",
+    ],
+    img_mini:
+      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/omy_3d_mini.webp",
   },
 ];
 
