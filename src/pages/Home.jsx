@@ -133,7 +133,7 @@ function Home() {
               <Link to="/lpb-foire-aux-vin">
                 <div className="big-content">
                   <img
-                    src={`${bucket}/images/home/main_petit_ballon.webp`}
+                    src={`${bucket}/images/home/main_petit_balloon.webp`}
                     alt="photo_set_bottles"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
