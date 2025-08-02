@@ -120,7 +120,7 @@ function Home() {
                   <br /> AU SERVICE DES IDÉES
                 </p>
                 <img
-                  src={`${bucket}/images/home/smile.png`}
+                  src="/assets/images/smile.png"
                   alt="smiley_face"
                   className="smile-img"
                   loading="lazy"
@@ -133,7 +133,7 @@ function Home() {
               <Link to="/lpb-foire-aux-vin">
                 <div className="big-content">
                   <img
-                    src={`${bucket}/images/home/main_petit_balloon.webp`}
+                    src="/assets/images/main_petit_balloon.jpg"
                     alt="photo_set_bottles"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -142,7 +142,7 @@ function Home() {
                   />
                   <div className="arrow_wine_box">
                     <img
-                      src={`${bucket}/images/home/arrow.png`}
+                      src="/assets/images/arrow.png"
                       alt="arrow_pointing_wine"
                       loading="lazy"
                     />
@@ -160,7 +160,7 @@ function Home() {
             <div className="work-box" id="aa">
               <div className="extra-content">
                 <img
-                  src={`${bucket}/images/petit_balloon_b/bottle.png`}
+                  src="/assets/images/bottle_petit_ballon_low.png"
                   alt="wine_bottle"
                   className="wine_bottle"
                   loading="lazy"
@@ -168,7 +168,7 @@ function Home() {
               </div>
               <Link to="/aa">
                 <img
-                  src={`${bucket}/images/home/Aa_home.png`}
+                  src="/assets/images/Aa_home.png"
                   alt="aa-img"
                   className="aa_square"
                   loading="lazy"
@@ -188,19 +188,19 @@ function Home() {
               <Link to="/playtime-paris-ny">
                 <div className="big-content">
                   <img
-                    src={`${bucket}/images/home/stars_whale.png`}
+                    src="/assets/images/stars_whale.png"
                     alt="decorative-stars"
                     className="stars-img"
                     loading="lazy"
                   />
                   <img
-                    src={`${bucket}/gif/whale.gif`}
+                    src="/assets/gif/whale.gif"
                     alt="whale"
                     className="whale-img"
                     loading="lazy"
                   />
                   <img
-                    src={`${bucket}/images/home/playtime_home.webp`}
+                    src="/assets/images/playtime_home.png"
                     alt="playtime_paris_poster"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -230,7 +230,7 @@ function Home() {
                 </h2>
               </Link>
               <img
-                src={`${bucket}/images/home/stars_whale.png`}
+                src="/assets/images/stars_whale.png"
                 alt="decorative-stars"
                 className="zonza-stars"
                 loading="lazy"
@@ -238,7 +238,7 @@ function Home() {
               <div className="big-content">
                 <Link to="/zonza">
                   <img
-                    src={`${bucket}/images/home/zonza.webp`}
+                    src="/assets/images/zonza.jpg"
                     alt="zonza_bottles"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -260,7 +260,7 @@ function Home() {
                   mes potes
                 </p>
                 <img
-                  src={`${bucket}/images/home/arrow.png`}
+                  src="/assets/images/arrow.png"
                   alt="arroy"
                   className="arrow-img"
                   loading="lazy"
@@ -269,14 +269,14 @@ function Home() {
               <div className="big-content">
                 <Link to="/omy-3d">
                   <img
-                    src={`${bucket}/images/home/tiger.webp`}
+                    src="/assets/images/tiger.png"
                     alt="tiger"
                     loading="lazy"
                   />
                 </Link>
               </div>
               <img
-                src={`${bucket}/images/home/yellow_tape.webp`}
+                src="/assets/images/yellow_tape.png"
                 alt=""
                 className="tape-img"
                 loading="lazy"
@@ -297,7 +297,7 @@ function Home() {
               <div className="big-content">
                 <Link to="/omy-stick-it">
                   <img
-                    src={`${bucket}/images/home/omy_pack.webp`}
+                    src="/assets/images/omy_pack.png"
                     alt="omy_packaging"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -306,7 +306,7 @@ function Home() {
                   />
                 </Link>
                 <img
-                  src={`${bucket}/images/home/stars_whale.png`}
+                  src="/assets/images/stars_whale.png"
                   alt="decorative-stars"
                   className="omy-stars"
                   loading="lazy"
@@ -320,7 +320,7 @@ function Home() {
                 <h2>KIEHL'S</h2>
                 <div className="big-content">
                   <img
-                    src={`${bucket}/gif/kiehls.gif`}
+                    src="/assets/gif/kiehls.gif"
                     alt="kiehls_product"
                     loading="lazy"
                   />
@@ -334,7 +334,7 @@ function Home() {
                 <div className="big-content">
                   <Link to="/paikea">
                     <img
-                      src={`${bucket}/images/home/paikea.webp`}
+                      src="/assets/images/paikea.png"
                       alt="paikea_street_poster"
                       onMouseEnter={() => dispatch(togglePointer())}
                       onMouseLeave={() => dispatch(togglePointer())}
@@ -368,7 +368,7 @@ function Home() {
               <div className="big-content">
                 <Link to="/cider">
                   <img
-                    src={`${bucket}/images/home/organic_shape.webp`}
+                    src="/assets/images/organic_shape.png"
                     alt="cider"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
@@ -387,22 +387,22 @@ function Home() {
             </div>
             <div className="big-about behind">
               <h3>AB</h3>
-              <img src={`${bucket}/gif/about.gif`} alt="" />
+              <img src="/assets/gif/about.gif" alt="" />
             </div>
             <div className="big-about behind">
               <h3>ABOO</h3>
-              <img src={`${bucket}/gif/about_2.gif`} alt="" />
+              <img src="/assets/gif/about_2.gif" alt="" />
             </div>
             <div className="sticker-container">
               <div className="sticker-container-relative">
                 <img
-                  src={`${bucket}/images/home/sticker.webp`}
+                  src="/assets/images/sticker.png"
                   alt=""
                   id="sticker"
                   loading="lazy"
                 />
                 <img
-                  src={`${bucket}/images/home/yellow_tape.webp`}
+                  src="/assets/images/yellow_tape.png"
                   alt=""
                   className="yellow_tape"
                   id="first"
@@ -437,20 +437,17 @@ function Home() {
                   </Link>
                 </div>
                 <img
-                  src={`${bucket}/gif/estrellas.gif`}
+                  src="/assets/gif/estrellas.gif"
                   alt="decorative_stars"
                   id="stars"
                 />
                 <img
-                  src={`${bucket}/images/home/big_iso.png`}
+                  src="/assets/images/big_iso.png"
                   alt="elephant_logo"
                   id="big-iso"
                 />
                 <div className="contact-message">
-                  <img
-                    src={`${bucket}/images/big_smile.png`}
-                    alt="smiley_face"
-                  />
+                  <img src="/assets/images/big_smile.png" alt="smiley_face" />
                   <h4>
                     Nous sommes faits pour
                     <br /> travailler ensemble.
