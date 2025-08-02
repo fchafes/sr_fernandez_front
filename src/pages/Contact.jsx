@@ -13,8 +13,6 @@ function Contact() {
     return window.innerWidth <= 768;
   };
   const dispatch = useDispatch();
-  const bucket =
-    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const navigate = useNavigate();
   const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch3, setShowGlitch3] = useState(false);
@@ -34,7 +32,7 @@ function Contact() {
   };
   useEffect(() => {
     const preloadGlitch_02 = new Image();
-    preloadGlitch_02.src = `${bucket}/gif/glitch_02.gif`;
+    preloadGlitch_02.src = "/assets/gif/glitch_02.gif";
     return () => {};
   }, []);
 
@@ -51,8 +49,8 @@ function Contact() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_2.gif`
-              : `${bucket}/gif/glitch_02.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_2.gif"
+              : "/assets/gif/glitch_02.gif"
           }
           className="glitch"
         />
@@ -61,8 +59,8 @@ function Contact() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_3.gif`
-              : `${bucket}/gif/glitch_01.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_3.gif"
+              : "/assets/gif/glitch_01.gif"
           }
           className="glitch"
         />
@@ -100,7 +98,7 @@ function Contact() {
           </div>
           <div className="link-box bottomless">
             <img
-              src={`${bucket}/images/contact_smile.png`}
+              src="/assets/images/contact_smile.png"
               alt="smiley_face"
               className="contact-smile"
             />

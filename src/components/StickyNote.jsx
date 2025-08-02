@@ -1,8 +1,8 @@
-import './StickyNote.css';
-import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import "./StickyNote.css";
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
-function StickyNote( { startPoint, endPoint, data } ) {
+function StickyNote({ startPoint, endPoint, data }) {
   const [effectActivated, setEffectActivated] = useState(false);
   const { ref, inView } = useInView({ threshold: 0.5 });
 
@@ -12,11 +12,16 @@ function StickyNote( { startPoint, endPoint, data } ) {
 
   return (
     <>
-      <div ref={ref} className={`sticky-note ${startPoint} ${effectActivated ? endPoint : ''}`} >
-              <p>{data}</p>
-            </div>
+      <div
+        ref={ref}
+        className={`sticky-note ${startPoint} ${
+          effectActivated ? endPoint : ""
+        }`}
+      >
+        <p>{data}</p>
+      </div>
     </>
-  )
+  );
 }
 
 export default StickyNote;

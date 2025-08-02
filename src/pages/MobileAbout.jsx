@@ -9,8 +9,6 @@ function MobileAbout() {
   let location = useLocation();
   const navigate = useNavigate();
   const stickyText = stickyNotesData;
-  const bucket =
-    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const [showGlitch, setShowGlitch] = useState(false);
   const [showGlitch2, setShowGlitch2] = useState(false);
   const handleGlitch = () => {
@@ -32,13 +30,13 @@ function MobileAbout() {
     <>
       {showGlitch && (
         <img
-          src={`${bucket}/mobile/glitch/glitch_mob_3.gif`}
+          src="/assets/gif/glitch_mobile/glitch_mob_3.gif"
           className="glitch"
         />
       )}
       {showGlitch2 && (
         <img
-          src={`${bucket}/mobile/glitch/glitch_mob_1.gif`}
+          src="/assets/gif/glitch_mobile/glitch_mob_1.gif"
           className="glitch"
         />
       )}
@@ -68,12 +66,12 @@ function MobileAbout() {
           <h4>T</h4>
           <h4>!</h4>
           <img
-            src={`${bucket}/mobile/sticker_mobile.webp`}
+            src="/assets/images/sticker.png"
             alt=""
             className="about-sticker-round"
           />
           <img
-            src={`${bucket}/images/home/yellow_tape.webp`}
+            src="/assets/images/yellow_tape.png"
             alt=""
             className="about-sticker-tape"
           />
@@ -96,14 +94,14 @@ function MobileAbout() {
         <div className="m-big-about-behind">
           <h4>A</h4>
           <h4>B</h4>
-          <img src={`${bucket}/gif/about.gif`} alt="" />
+          <img src="/assets/gif/about.gif" alt="" />
         </div>
         <div className="m-big-about-behind">
           <h4>A</h4>
           <h4>B</h4>
           <h4>O</h4>
           <h4>O</h4>
-          <img src={`${bucket}/gif/about_2.gif`} alt="" />
+          <img src="/assets/gif/about_2.gif" alt="" />
         </div>
       </div>
     </>

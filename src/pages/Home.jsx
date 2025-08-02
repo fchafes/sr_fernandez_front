@@ -13,8 +13,6 @@ import { toggleVisible } from "../redux/cursorReducer";
 
 function Home() {
   const dispatch = useDispatch();
-  const bucket =
-    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const stickyText = stickyNotesData;
   const navigate = useNavigate();
   const [showGlitch, setShowGlitch] = useState(false);

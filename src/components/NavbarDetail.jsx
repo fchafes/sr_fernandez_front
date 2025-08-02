@@ -45,7 +45,7 @@ function NavbarDetail({ handleGlitch, handleContactGlitch }) {
             <li>
               <Link to="#" onClick={handleClick}>
                 <img
-                  src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr_iso_white.png"
+                  src="/assets/images/sr_iso_white.png"
                   alt="iso_logo_elephant"
                 />
               </Link>

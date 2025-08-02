@@ -11,8 +11,6 @@ function MobileHome() {
   const isMobile = () => {
     return window.innerWidth <= 768;
   };
-  const bucket =
-    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
 
   const [activeTab, setActiveTab] = useState(null);
   const [showGlitch2, setShowGlitch2] = useState(false);
@@ -46,8 +44,8 @@ function MobileHome() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_3.gif`
-              : `${bucket}/gif/glitch_03.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_3.gif"
+              : "/assets/gif/glitch_03.gif"
           }
           className="glitch"
         />
@@ -56,8 +54,8 @@ function MobileHome() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_1.gif`
-              : `${bucket}/gif/glitch_01.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_1.gif"
+              : "/assets/gif/glitch_01.gif"
           }
           className="glitch"
         />
@@ -73,7 +71,7 @@ function MobileHome() {
             <img
               src={
                 activeTab === null
-                  ? `${bucket}/mobile/gif/m_home_header.gif`
+                  ? "/assets/gif/m_home_header.gif"
                   : workData[activeIndex].images_mobile[0]
               }
               alt=""

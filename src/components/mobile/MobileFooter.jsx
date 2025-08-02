@@ -10,9 +10,9 @@ function MobileFooter({ theme }) {
   };
   const footerLogoSrc = () => {
     if (theme === "dark") {
-      return "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr-iso-white.svg";
+      return "/assets/images/sr_iso_white.png";
     } else {
-      return "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr-iso-01.svg";
+      return "/assets/images/sr-iso-01.svg";
     }
   };
   return (

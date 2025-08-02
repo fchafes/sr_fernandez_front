@@ -34,9 +34,7 @@ export const CustomCursor = () => {
       <div
         className={`inner-face ${isPointer ? "shown" : ""}`}
         style={{
-          backgroundImage: `url(
-            "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/contact_smile.png"
-          )`,
+          backgroundImage: `url("/assets/images/contact_smile.png")`,
         }}
       ></div>
     </div>

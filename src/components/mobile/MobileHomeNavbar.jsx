@@ -66,7 +66,7 @@ function MobileHomeNavbar({
           <li>
             <Link>
               <img
-                src="https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr_iso_white.png"
+                src="/assets/images/sr_iso_white.png"
                 alt="isologo_elephant"
               />
             </Link>

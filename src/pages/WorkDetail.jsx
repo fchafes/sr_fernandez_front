@@ -14,8 +14,6 @@ function WorkDetail() {
     return window.innerWidth <= 768;
   };
   const dispatch = useDispatch();
-  const bucket =
-    "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket";
   const { url } = useParams();
   const work = workData.find((work) => work.url === url);
   const paragraphs = Object.values(work.description);
@@ -55,9 +53,9 @@ function WorkDetail() {
 
   useEffect(() => {
     const preloadGlitch_03 = new Image();
-    preloadGlitch_03.src = `${bucket}/gif/glitch_03.gif`;
+    preloadGlitch_03.src = "/assets/gif/glitch_03.gif";
     const preloadGlitch_04 = new Image();
-    preloadGlitch_04.src = `${bucket}/gif/glitch_04.gif`;
+    preloadGlitch_04.src = "/assets/gif/glitch_04.gif";
     return () => {};
   }, []);
 
@@ -77,8 +75,8 @@ function WorkDetail() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_1.gif`
-              : `${bucket}/gif/glitch_03.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_1.gif"
+              : "/assets/gif/glitch_mobile/glitch_mob_3.gif"
           }
           className="glitch"
         />
@@ -87,8 +85,8 @@ function WorkDetail() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_2.gif`
-              : `${bucket}/gif/glitch_04.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_2.gif"
+              : "/assets/gif/glitch_04.gif"
           }
           className="glitch"
         />
@@ -97,8 +95,8 @@ function WorkDetail() {
         <img
           src={
             isMobile()
-              ? `${bucket}/mobile/glitch/glitch_mob_3.gif`
-              : `${bucket}/gif/glitch_02.gif`
+              ? "/assets/gif/glitch_mobile/glitch_mob_3.gif"
+              : "/assets/gif/glitch_02.gif"
           }
           className="glitch"
         />
