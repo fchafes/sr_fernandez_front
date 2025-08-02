@@ -8,19 +8,18 @@ const workData = [
       paragraph_2: "direction artistique et realisation du shooting.",
     },
     images: [
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_1.webp",
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_2.webp",
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_3.webp",
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/petit_balloon_4.webp",
+      "/assets/images/petit_balloon/petit_balloon_1.jpg",
+      "/assets/images/petit_balloon/petit_balloon_2.jpg",
+      "/assets/images/petit_balloon/petit_balloon_3.jpg",
+      "/assets/images/petit_balloon/petit_balloon_4.jpg",
     ],
     images_mobile: [
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_1.webp",
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_2.webp",
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_3.webp",
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/petit_balloon/mobile/petit_balloon_4.webp",
+      "/assets/images/petit_balloon/petit_balloon_1.jpg",
+      "/assets/images/petit_balloon/petit_balloon_2.jpg",
+      "/assets/images/petit_balloon/petit_balloon_3.jpg",
+      "/assets/images/petit_balloon/petit_balloon_4.jpg",
     ],
-    img_mini:
-      "https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/mobile/mini/petit_balloon_mini.webp",
+    img_mini: "/assets/images/petit_balloon/petit_balloon_1.jpg",
   },
   {
     url: "lpb-box-premium",
