@@ -46,7 +46,7 @@ function Home() {
 
   useEffect(() => {
     const preloadGlitch_01 = new Image();
-    preloadGlitch_01.src = `${bucket}/gif/glitch_01.gif`;
+    preloadGlitch_01.src = "/assets/gif/glitch_01.gif";
     return () => {};
   }, []);
 
@@ -60,7 +60,7 @@ function Home() {
         />
         <MadeIn />
         {showGlitch && (
-          <img src={`${bucket}/gif/glitch_01.gif`} className="glitch" />
+          <img src="/assets/gif/glitch_01.gif" className="glitch" />
         )}
 
         {/* ---- HOME CONTAINER ---- */}
@@ -77,7 +77,7 @@ function Home() {
                   Sr. Fernandez
                 </h2>
                 <img
-                  src={`${bucket}/images/home/yellow_star.png`}
+                  src="/assets/images/yellow_star.png"
                   alt="decorative_yellow_star"
                   loading="lazy"
                 />
@@ -98,7 +98,7 @@ function Home() {
               <Link to="/lpb-box-premium">
                 <div className="big-content">
                   <img
-                    src={`${bucket}/gif/petit_ballon.gif`}
+                    src="/assets/gif/petit_ballon.gif"
                     alt="petit_ballon_gif"
                     loading="lazy"
                     onMouseEnter={() => dispatch(togglePointer())}
