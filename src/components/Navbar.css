@@ -50,8 +50,8 @@
   width: 53px;
   height: 34px;
   background-color: rgb(255, 255, 255);
-  mask: url("assets/images/sr_iso.png") no-repeat center / contain;
-  -webkit-mask: url("assets/images/sr_iso.png") no-repeat center / contain;
+  mask: url("assets/images/sr-iso-01.svg") no-repeat center / contain;
+  -webkit-mask: url("assets/images/sr-iso-01.svg") no-repeat center / contain;
   cursor: pointer !important;
 }
 
