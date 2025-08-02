@@ -133,7 +133,7 @@ function Home() {
               <Link to="/lpb-foire-aux-vin">
                 <div className="big-content">
                   <img
-                    src="/assets/images/main_petit_balloon.jpg"
+                    src="/assets/images/main_petit_ballon.jpg"
                     alt="photo_set_bottles"
                     onMouseEnter={() => dispatch(togglePointer())}
                     onMouseLeave={() => dispatch(togglePointer())}
