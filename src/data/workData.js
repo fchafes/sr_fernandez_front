@@ -41,8 +41,7 @@ const workData = [
       "/assets/images/petit_balloon_b/petit_balloon_b_2.jpg",
       "/assets/images/petit_balloon_b/petit_balloon_b_3.png",
     ],
-    img_mini:
-      "/assets/images/petit_balloon_b_1.jpg",
+    img_mini: "/assets/images/petit_balloon_b/petit_balloon_b_1.jpg",
   },
   {
     url: "playtime-paris-ny",
@@ -73,8 +72,7 @@ const workData = [
       "/assets/images/playtime_paris/playtime_7.png",
       "/assets/images/playtime_paris/playtime_8.gif",
     ],
-    img_mini:
-      "/assets/images/playtime_1.jpg",
+    img_mini: "/assets/images/playtime_paris/playtime_1.jpg",
   },
   {
     url: "paikea",
@@ -100,8 +98,7 @@ const workData = [
       "/assets/images/paikea/paikea_4.png",
       "/assets/images/paikea/paikea_5.jpg",
     ],
-    img_mini:
-      "/assets/images/paikea/paikea_1.jpg",
+    img_mini: "/assets/images/paikea/paikea_1.jpg",
   },
   {
     url: "aa",
@@ -130,8 +127,7 @@ const workData = [
       "/assets/images/aa/aa_6.jpg",
       "/assets/images/aa/aa_7.jpg",
     ],
-    img_mini:
-      "/assets/images/aa/aa_1.jpg",
+    img_mini: "/assets/images/aa/aa_1.jpg",
   },
   {
     url: "zonza",
@@ -154,8 +150,7 @@ const workData = [
       "/assets/images/zonza/zonza_4.jpg",
       "/assets/images/zonza/zonza_5.jpg",
     ],
-    img_mini:
-      "/assets/images/zonza/zonza_1.jpg",
+    img_mini: "/assets/images/zonza/zonza_1.jpg",
   },
   {
     url: "cider",
@@ -178,8 +173,7 @@ const workData = [
       "/assets/images/cider/cider_2.jpg",
       "/assets/images/cider/cider_3.jpg",
     ],
-    img_mini:
-      "/assets/images/cider/cider_1.jpg",
+    img_mini: "/assets/images/cider/cider_1.jpg",
   },
   {
     url: "omy-stick-it",
@@ -204,8 +198,7 @@ const workData = [
       "/assets/images/omy_stick_it/omy_stick_4.png",
       "/assets/images/omy_stick_it/omy_stick_5.gif",
     ],
-    img_mini:
-      "/assets/images/omy_stick_it/omy_stick_1_png",
+    img_mini: "/assets/images/omy_stick_it/omy_stick_1.png",
   },
   {
     url: "omy-3d",
@@ -230,8 +223,7 @@ const workData = [
       "/assets/images/omy_3d/omy_3d_4.jpg",
       "/assets/images/omy_3d/omy_3d_5.jpg",
     ],
-    img_mini:
-      "/assets/images/omy_3d/omy_3d_mini.jpg",
+    img_mini: "/assets/images/omy_3d/omy_3d_1.jpg",
   },
 ];
 
