@@ -44,18 +44,15 @@
   text-decoration: none;
   color: #ffffff;
   cursor: pointer !important;
-  
 }
 
 .sticky-container .menu ul .iso-svg {
   width: 53px;
   height: 34px;
   background-color: rgb(255, 255, 255);
-  mask: url(https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr-iso-01.svg)
-    no-repeat center / contain;
-  -webkit-mask: url(https://wbnzdyxchqficjywllpl.supabase.co/storage/v1/object/public/mi%20primer%20bucket/images/sr-iso-01.svg)
-    no-repeat center / contain;
-    cursor: pointer !important;
+  mask: url("assets/images/sr-iso-01.svg") no-repeat center / contain;
+  -webkit-mask: url("assets/images/sr-iso-01.svg") no-repeat center / contain;
+  cursor: pointer !important;
 }
 
 .sticky-container .menu ul :nth-child(4) {
